@@ -11,7 +11,7 @@ authorName = "Hannan Ali"
 
 ## Open Source in general
 
-This is a topic that has really deep meaning for me cos open source means a lot and today's life would have been unimaginable without open source. For me open source is one of the evolutionary stages human beings are going through in order to make societies more collaborative, more helpful, and peaceful. It's the open source spirit that's about promoting creativity and freedom to use and create what ever we can think of in this awesome world. It's about **not** having a monopoly of a few over human intellect but to use human intellect as a resource for the well being of the world we live in. So that cats can have a life they deserve. Open source can create harmony just as the Information sharing between our body parts make us a living being. It's **Sharing** and *SHARING IS CARING*. It's about eliminating the culture of hostility and instead promoting harmony. 😄😄😄😄😄
+This is a topic that has really deep meaning for me cos open source means a lot of today's world and today's life would have been unimaginable without open source. For me open source is one of the evolutionary stages human beings are going through in order to make societies more collaborative, more helpful, and peaceful. It's the open source spirit that's about promoting creativity and freedom to use and create what ever we can think of in this awesome world. It's about **not** having a monopoly of a few over human intellect but to use human intellect as a resource for the well being of the world we live in. So that cats can have a life they deserve. Open source can create harmony just as the Information sharing between our body parts make us a living being. It's **Sharing** and *SHARING IS CARING*. It's about eliminating the culture of hostility and instead promoting harmony. 😄😄😄😄😄
 
 ### Open Source in tech
 
@@ -21,20 +21,20 @@ Today the open source means the world for me as I daily work on open source tech
 
 This fact also helps that I have such an awesome community including awesome people who will be there to help me whenever I raise an issue and will welcome my contributions too. Even if they don't accept my contributions they will tell me why they didn't accept it so I can actually learn and improve and resubmit my contributions.
 
+### Open Source for education
+I wasn't quite introduced to the programming world before a major open source effort, it was due to the open source projects such as [edX](https://edx.org) by universities like [MIT](https://mit.edu) and [Harvard](https://harvard.edu) which introduced me to this programming world.
+Open sourcing education has proven to have a really big impact, [stories](http://news.mit.edu/2015/ahaan-rungta-mit-opencourseware-mitx-1116) such as these are a proof of it.
 
 ### Open Source for Peace
 
 The really fun thing about [OSS](https://en.wikipedia.org/wiki/Open-source_software) world online is that it's the nicest place on internet too.
 
-I am from [Pakistan](https://en.wikipedia.org/wiki/Pakistan) and if my peer is from [India](https://en.wikipedia.org/wiki/India), we don't have to fight. We can learn and grow together. This allows for mutual understanding and collaboration which is essential and can solve any issue no matter how big it is. Something governments aren't really good at doing. This seems like a small thing but this can start such a powerful chain reaction and can ultimately be the cause of world peace. World peace is something I would really like to have. Can we all have some more world peace?
+People anywhere in the world can learn and grow together. This allows for mutual understanding and collaboration which is essential and can solve any issue no matter how big it is. Something governments aren't really good at doing. This seems like a small thing but this can start such a powerful chain reaction and can ultimately be the cause of world peace. World peace is something I would really like to have. Can we all have some more world peace?
 
 Governments can also open source the software they have and this is one of the reasons I like and appreciate the projects such as [government.github.com](https://government.github.com). If this is done effectively it's a really cool thing because Governments can collaborate more effectively in improving their sectors. Really cool. Han?
 
-This also really inspired me to create an Open Source Project called [thepeacepledge](https://damp-ridge-2114.herokuapp.com). Please sign up for this peace pledge. Your sign up matter. It's open source and you can see the code and maybe learn something too [here](https://github.com/abdulhannanali/the-peace-pledge)
+This also really inspired me to create an Open Source Project called [thepeacepledge](https://damp-ridge-2114.herokuapp.com). Please sign up for this peace pledge. Your sign up matters. It's open source and you can see the code and maybe learn something too [here](https://github.com/abdulhannanali/the-peace-pledge)
 
-
-### Open Source for change
-Open source can be a cause of huge change in this world. This blog post has made me realize fairly that if it wasn't for open source, I couldn't have been able to write this. I live in Okara, Pakistan where I see visible effects of poverty, ignorance, illiteracy and sometimes extremism too. It was because of the open source effort of internet which managed to reach my city, that started this change in me and led me to believe the fact that we are all humans and collaboration is the key to a better world. I want this for others too and want to play my role in it.
 
 ### Purpose of writing this
 This was a task assigned by [FOSSASIA](https://fossasia.github.io) in [Google CodeIn 2015](https://codein.withgoogle.com). FOSSASIA is a really awesome organization with purpose of improving the state of open source in the Asian continent which luckily carries most of the human weight. Please contribute to FOSSASIA since it's really awesome, also share about FOSSASIA cos together we'll make a difference.
