@@ -1,0 +1,19 @@
+baseurl = "https://abdulhannanali.github.io/my-opensource-journey/"
+languageCode = "en-us"
+title = "My open source journey"
+author = "Hannan Ali"
+copyright = "Site Licensed under GNU GPL V3.0"
+canonifyurls = true
+disqusShortname = "myopensourcejourney"
+theme = "allegiant"
+
+[params]
+    ga_api_key = "Your Google Analytics tracking id" # Google Analytics API key.
+    avatar = "https://secure.gravatar.com/avatar/89e5f7614cb88cd573359a953a09aa6e?s=240" # Image should be square, and roughly 150px x 150px
+    bio = "Hannan Ali is a programmer who has a keen interest in using open source to develop this world. Open Source is really awesome and makes our lives better. You can check out the open source projects he is working on at his Github Repo."
+    github = "http://github.com/abdulhannanali"
+    twitter = "https://twitter.com/computistic"
+    linkedin = "https://www.linkedin.com/in/username"
+    footer_1 = "Some text here."
+    footer_2 = "Some different text here."
+    footer_3 = "Even more different text here."
