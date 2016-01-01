@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <title>How to setup a blog using Hugo &middot; My open source journey</title>
+  <link rel="stylesheet" href="https://abdulhannanali.github.io/my-opensource-journey//css/style.css" />
+  <link rel="stylesheet" href="https://abdulhannanali.github.io/my-opensource-journey//css/font-awesome.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header class="header" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(https://abdulhannanali.github.io/my-opensource-journey/https://gohugo.io/img/hugo.png) 49.9% 49.9% / cover;" role="banner">
+<!-- FeaturedImage. Otherwise show default //-->
+
+      <section id="branding">
+        <div id="site-title"><a href="https://abdulhannanali.github.io/my-opensource-journey/">My open source journey</a></div>
+        <nav id="mainmenu">
+          <ul>
+            <li><a href="https://abdulhannanali.github.io/my-opensource-journey/">Articles</a></li>
+            <li><a href="http://github.com/abdulhannanali" target="_blank">Github</a></li>
+            <li><a href="https://twitter.com/computistic" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a></li>
+          </ul>
+        </nav>
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+          <label for="op">Menu</label>
+        </div>
+        <div class="overlay overlay-hugeinc">
+          <label for="op"></label>
+          <nav id="menu" role="navigation">
+            <ul>
+            <li><a href="https://abdulhannanali.github.io/my-opensource-journey/">Articles</a></li>
+            <li><a href="http://github.com/abdulhannanali" target="_blank">Github</a></li>
+            <li><a href="https://twitter.com/computistic" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a></li>
+          </ul>
+          </nav>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <div class="post-heading">
+        <h1>
+        How to setup a blog using Hugo
+          <div class="share-icons-header">
+            <a href="http://www.twitter.com/share?url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fsetup-hugo-blog%2fcontent%2f" target="_blank">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M437.219,245.162c0-3.088-0.056-6.148-0.195-9.18c13.214-9.848,24.675-22.171,33.744-36.275
+                  c-12.129,5.453-25.148,9.097-38.835,10.626c13.965-8.596,24.675-22.338,29.738-38.834c-13.075,7.928-27.54,13.603-42.924,16.552
+                  c-12.323-14.021-29.904-22.95-49.35-23.284c-37.332-0.612-67.598,30.934-67.598,70.463c0,5.619,0.584,11.072,1.752,16.329
+                  c-56.22-3.616-106.042-32.881-139.369-77c-5.814,10.571-9.152,22.922-9.152,36.164c0,25.037,11.934,47.291,30.071,60.421
+                  c-11.099-0.5-21.503-3.866-30.627-9.375c0,0.306,0,0.612,0,0.918c0,34.996,23.312,64.316,54.245,71.159
+                  c-5.675,1.613-11.656,2.448-17.804,2.421c-4.367-0.028-8.596-0.501-12.713-1.392c8.596,28.681,33.577,49.628,63.147,50.323
+                  c-23.145,19.194-52.298,30.655-83.955,30.572c-5.453,0-10.849-0.361-16.135-1.029c29.933,20.53,65.456,32.491,103.65,32.491
+                  C369.23,447.261,437.219,339.048,437.219,245.162z"/>
+                <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
+                  C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
+                  S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
+              </g>
+            </svg></a>
+            <a href="http://plus.google.com/share?url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fsetup-hugo-blog%2fcontent%2f" target="_blank">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M349.146,402.251c0-30.016-17.387-44.815-36.525-60.922l-15.662-12.185c-4.785-3.895-11.294-9.124-11.294-18.693
+                    c0-9.57,6.537-15.662,12.184-21.309c18.249-14.354,36.526-29.571,36.526-61.756c0-33.076-20.892-50.462-30.878-58.724l0,0h26.956
+                    L358.271,153h-89.603c-23.479,0-53.049,3.478-77.863,23.924c-18.693,16.079-27.818,38.278-27.818,58.279
+                    c0,33.911,26.093,68.294,72.188,68.294c4.368,0,9.125-0.445,13.937-0.863c-2.17,5.23-4.34,9.569-4.34,16.97
+                    c0,13.464,6.955,21.753,13.047,29.57c-19.556,1.308-56.109,3.478-83.065,20.001c-25.676,15.217-33.493,37.416-33.493,53.077
+                    c0,32.186,30.461,62.201,93.525,62.201C309.561,484.454,349.146,443.116,349.146,402.251z M255.621,291.34
+                    c-37.415,0-54.384-48.292-54.384-77.418c0-11.322,2.17-23.034,9.569-32.186c6.955-8.707,19.139-14.382,30.461-14.382
+                    c36.108,0,54.802,48.738,54.802,80.033c0,7.845-0.862,21.754-10.877,31.768C278.237,286.11,266.498,291.312,255.621,291.34z
+                     M256.066,466.177c-46.54,0-76.556-22.171-76.556-53.049s27.846-41.311,37.416-44.787c18.276-6.093,41.755-6.982,45.677-6.982
+                    c4.34,0,6.51,0,9.987,0.445c33.076,23.479,47.402,35.218,47.402,57.416C319.992,446.176,297.821,466.177,256.066,466.177z"/>
+                  <polygon points="353.068,317.768 400.164,317.768 400.164,364.836 423.699,364.836 423.699,317.768 470.768,317.768 
+                    470.768,294.233 423.699,294.233 423.699,247.165 400.164,247.165 400.164,294.233 353.068,294.233     "/>
+                  <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
+                    C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
+                    S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
+                </g>
+            </svg></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fsetup-hugo-blog%2fcontent%2f" target="_blank">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
+                  C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
+                  S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
+                <path d="M317.739,482.617V306h58.279l9.208-58.529h-67.487v-29.348c0-15.272,5.007-29.849,26.928-29.849h43.813v-58.418h-62.201
+                  c-52.298,0-66.569,34.438-66.569,82.175v35.413h-35.885V306h35.885v176.617H317.739L317.739,482.617z"/>
+              </g>
+            </svg>
+            </a>
+          </div>
+          
+        </h1>
+      </div>
+
+    </header>
+
+    <div id="container">
+
+
+<section id="content" role="main">
+<section class="entry-meta">
+  <span class="post-date">Jan 1, 2016</span>
+</section></header>
+<section class="entry-content">
+<article>
+
+
+<h2 id="hugo-is-easiest-of-them-folks:05301946b75cb988bc2be8549079b4fa">Hugo is easiest of them folks</h2>
+
+<p>Hey there! I&rsquo;ve tried many of the static templating engines in the past. Most of them were based on <strong><a href="https://nodejs.org">node.js</a></strong> such as <a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>, <a href="https://hexo.io">Hexo</a>, <a href="https://github.com/flatiron/blacksmith">BlackSmith</a> but since I&rsquo;ve tried Hugo I am not going back now. Hugo is the best Static Website Engine <strong>EVER</strong>. Some of the features that are very impressive about Hugo include:</p>
+
+<ul>
+<li>It&rsquo;s speed and performance (check out this impressive <a href="https://www.youtube.com/watch?v=CdiDYZ51a2o">Hugo Benchmark Video</a>)</li>
+<li>It&rsquo;s ultra flexibility</li>
+<li>It&rsquo;s awesome collaborative community<br /></li>
+</ul>
+
+<p>Within 9ms it renders the whole content for me again. I am literally like <strong>WOW</strong></p>
+
+<p><img src="../wow.gif" alt="WOW! HUGO IS AWESOME" />
+This was me after seeing the rendering time and speed of hugo.</p>
+
+<p>Click <a href="https://www.youtube.com/watch?v=w7Ft2ymGmfc">here</a> to see how you can create a functional site with <a href="https://gohugo.io">Hugo</a> under 2 minutes.</p>
+
+<h2 id="let-s-get-started-with-hugo:05301946b75cb988bc2be8549079b4fa">Let&rsquo;s get started with Hugo</h2>
+
+<p>Enough of the talk. Let&rsquo;s get to the real thing here.</p>
+
+<h3 id="downloading-and-installing-hugo:05301946b75cb988bc2be8549079b4fa">Downloading and Installing Hugo</h3>
+
+<p>Installing hugo is relatively easy and you have to deal with less <strong>CLI</strong> sometimes when intalling Hugo. It&rsquo;s also really cool to install it too. You can go to <a href="https://github.com/spf13/hugo/releases">Hugo Release Page</a> and download the binary for your computer depending on your Operating System version. You can also compile the source code yourself but we won&rsquo;t go into that <em>Nittttty Grittty</em>.</p>
+
+<p>Note: At the time of the writing this the current Hugo release is <a href="https://github.com/spf13/hugo/releases/tag/v0.15">v0.15</a>.</p>
+
+<p>The installation process, as you know, varies depending upon the operating system but it&rsquo;s relatively simple. For me it was just a couple of clicks and I am using <a href="https://kubuntu.org/">KUbuntu 15.10</a></p>
+
+<h3 id="setting-up-a-new-blog:05301946b75cb988bc2be8549079b4fa">Setting up a new blog</h3>
+
+<p>It couldn&rsquo;t have been simpler than what Hugo has made it for us. Let&rsquo;s setup a blog called <strong>My desi journeys</strong>. Here we&rsquo;ll post our desi journey.</p>
+
+<p>You can play with Hugo yourself and explore all the options Hugo provide by typing</p>
+
+<pre><code class="language-bash">hugo help
+</code></pre>
+
+<p>or better you can go to <a href="https://gohugo.io/overview/introduction/">Hugo Docs</a> for details and instructions on pretty much everything about Hugo</p>
+
+<p>So to start with our desi journeys we&rsquo;ll type</p>
+
+<pre><code class="language-bash">hugo new site &quot;my-desi-journey&quot;
+cd my-desi-journey
+</code></pre>
+
+<p>this will generate the bare bones of our hugo static site in a directory <code>my-desi-journey</code> and <code>cd</code> will change our <code>working directory</code> to this blog. Now let&rsquo;s create a new post. This is also relatively very simple</p>
+
+<pre><code class="language-bash">hugo new welcome/content.md
+</code></pre>
+
+<p>a <code>welcome</code> folder will be generated in the <code>content</code> folder. This folder is what hugo calls section and contains our <code>markdown</code> files. To read more about them go <a href="http://gohugo.io/content/sections/">here</a></p>
+
+<p>If you are not familiar already with Markdown you should be. It&rsquo;s the thing these days but the great thing is it&rsquo;s also very simple. Click <a href="http://git.io/vCMcp">here</a> to read more about it.</p>
+
+<p>You will notice something like this on top of <code>content.md</code></p>
+
+<pre><code class="language-toml">+++
+date = &quot;2016-01-01T12:39:20+05:00&quot;
+draft = true
+title = &quot;Welcome&quot;
++++
+</code></pre>
+
+<p>This is not very markdown style in my honest opinion. This is called Front Matter in this case it&rsquo;s <a href="https://github.com/toml-lang/toml">TOML</a>. Front matter will contain your post meta data such as title, date etc. Read more about Front Matter <a href="http://gohugo.io/content/front-matter/">here</a></p>
+
+<p>Down below the front matter you can add standard markdown finally. For this blog post I am adding this</p>
+
+<pre><code class="language-md"># Welcome to a blog about my desi journeys
+
+This is where we discuss all that desi cool + odd stuff.
+OH YES! THIS IS THE SITE!!!
+</code></pre>
+
+<p>So after adding the markdown let&rsquo;s run the very first static version of site. Luckily for editing purposes hugo offers a really reliable and <strong>EXTREMELY FAST</strong> server which also watches for changes as you make them. Pretty cool? Yeah I know 😉😂😉.</p>
+
+<p>So let&rsquo;s run it</p>
+
+<pre><code class="language-bash">hugo server
+</code></pre>
+
+<p>Now go to to the link it specifies for the running web server and you will see a nice clean blank HTML page. That&rsquo;s all good but where&rsquo;s the content. This is where Hugo themes come in the equation. They teach Mr. Hugo some rendering.</p>
+
+<h3 id="getting-a-nice-cool-hugo-theme:05301946b75cb988bc2be8549079b4fa">Getting a nice cool Hugo theme</h3>
+
+<p>The awesome community of Hugo has made some really cool themes for Hugo. You can go and check&rsquo;em out here at <a href="https://themes.gohugo.io">themes.gohugo.io</a> and select the one you really love ❤️ ❤️ ❤️ .
+I am using <a href="https://themes.gohugo.io/allegiant/"><strong>ALLEGIANT</strong></a> the same one as this blog.</p>
+
+<p>Let&rsquo;s  execute some commands to use this theme</p>
+
+<pre><code class="language-bash">mkdir themes
+cd themes
+git clone https://github.com/brycematheson/allegiant.git
+cd ..
+</code></pre>
+
+<p>The first command will create a themes directory. We then change our <code>working directory</code> to this directory.
+After that third command will clone the <code>allegiant</code> themes repository in the local themes folder.</p>
+
+<p>Executing this will use the allegiant theme and build the drafts too</p>
+
+<pre><code class="language-bash">hugo --theme=allegiant --buildDrafts server
+</code></pre>
+
+<p>Now if we go on to our web server. We can see our beautiful site with some content too.
+That&rsquo;s pretty nice.</p>
+
+<h3 id="configuring-our-hugo-blog:05301946b75cb988bc2be8549079b4fa">Configuring our hugo blog</h3>
+
+<p>There are some changes you still have to make to the blog hugo generated for you. You have to especially change the configurations. Modifying the <code>config.toml</code> will do it. The <code>config.toml</code> contains values for different variables our hugo blog uses for generating the static content.
+I have modified <code>my-desi-journey</code> configuration file to look like this</p>
+
+<pre><code class="language-toml">baseurl = &quot;https://abdulhannanali.github.io/my-desi-journey&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My open source journey&quot;
+author = &quot;Hannan Ali&quot;
+copyright = &quot;Site Licensed under GNU GPL V3.0&quot;
+canonifyurls = true
+</code></pre>
+
+<p>You can also specify the theme in the configuratin file by adding the line below</p>
+
+<pre><code class="language-toml">theme = &quot;allegiant&quot;
+</code></pre>
+
+<p>This will save you the hassle of specifying the same theme in the command line each time you run your Hugo Server.</p>
+
+<p>These are the configurations which are necessary in most cases. <code>allegiant</code> also has it&rsquo;s own configurations variables which you can set too. Read about configuring allegiant <a href="http://themes.gohugo.io/allegiant#configuration">here</a></p>
+
+<p>To read more about configurations and what else can you do with them click <a href="http://gohugo.io/overview/configuration/">here</a></p>
+
+<h3 id="generating-static-content-for-uploading:05301946b75cb988bc2be8549079b4fa">Generating static content for uploading</h3>
+
+<p>Now there&rsquo;s just one step left, generate the static content to upload to our site. This is done by omitting <code>server</code> keyword from the command we used above</p>
+
+<pre><code class="language-bash">hugo --theme=allegiant --buildDrafts
+</code></pre>
+
+<p>You will have a <code>public</code> folder generated in your hugo blog root directory. The contents of this <code>public</code> folder are what we need to upload to the static server in order to display it&rsquo;s contents. We are done here YAYYY! You have your very own cooked desi blog. Congrats!</p>
+
+<p><img src="../woo.gif" alt="WOOO!" /></p>
+
+<h3 id="source-code-and-hugo-docs:05301946b75cb988bc2be8549079b4fa">Source code and Hugo Docs</h3>
+
+<p>I have made the source code of my-desi-journey available on Github if you want to take a look. Here is the repo <a href="https://github.com/abdulhannanali/my-desi-journey">link</a>. Also don&rsquo;t forget to check out the <a href="https://docs.hugo.io">hugo docs</a>.</p>
+
+<p><img src="../images/hugo.png" alt="Hugo Image" /></p>
+
+</section>
+<div class="entry-links"></div>
+</article>
+<div class="share-icons-body">
+  <a href="http://www.twitter.com/share?url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fsetup-hugo-blog%2fcontent%2f" target="_blank">
+  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+  <g>
+    <g>
+      <path d="M437.219,245.162c0-3.088-0.056-6.148-0.195-9.18c13.214-9.848,24.675-22.171,33.744-36.275
+        c-12.129,5.453-25.148,9.097-38.835,10.626c13.965-8.596,24.675-22.338,29.738-38.834c-13.075,7.928-27.54,13.603-42.924,16.552
+        c-12.323-14.021-29.904-22.95-49.35-23.284c-37.332-0.612-67.598,30.934-67.598,70.463c0,5.619,0.584,11.072,1.752,16.329
+        c-56.22-3.616-106.042-32.881-139.369-77c-5.814,10.571-9.152,22.922-9.152,36.164c0,25.037,11.934,47.291,30.071,60.421
+        c-11.099-0.5-21.503-3.866-30.627-9.375c0,0.306,0,0.612,0,0.918c0,34.996,23.312,64.316,54.245,71.159
+        c-5.675,1.613-11.656,2.448-17.804,2.421c-4.367-0.028-8.596-0.501-12.713-1.392c8.596,28.681,33.577,49.628,63.147,50.323
+        c-23.145,19.194-52.298,30.655-83.955,30.572c-5.453,0-10.849-0.361-16.135-1.029c29.933,20.53,65.456,32.491,103.65,32.491
+        C369.23,447.261,437.219,339.048,437.219,245.162z"/>
+      <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
+        C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
+        S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
+    </g>
+  </svg></a>
+  <a href="http://plus.google.com/share?url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fsetup-hugo-blog%2fcontent%2f" target="_blank">
+  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+    <g>
+      <g>
+        <path d="M349.146,402.251c0-30.016-17.387-44.815-36.525-60.922l-15.662-12.185c-4.785-3.895-11.294-9.124-11.294-18.693
+          c0-9.57,6.537-15.662,12.184-21.309c18.249-14.354,36.526-29.571,36.526-61.756c0-33.076-20.892-50.462-30.878-58.724l0,0h26.956
+          L358.271,153h-89.603c-23.479,0-53.049,3.478-77.863,23.924c-18.693,16.079-27.818,38.278-27.818,58.279
+          c0,33.911,26.093,68.294,72.188,68.294c4.368,0,9.125-0.445,13.937-0.863c-2.17,5.23-4.34,9.569-4.34,16.97
+          c0,13.464,6.955,21.753,13.047,29.57c-19.556,1.308-56.109,3.478-83.065,20.001c-25.676,15.217-33.493,37.416-33.493,53.077
+          c0,32.186,30.461,62.201,93.525,62.201C309.561,484.454,349.146,443.116,349.146,402.251z M255.621,291.34
+          c-37.415,0-54.384-48.292-54.384-77.418c0-11.322,2.17-23.034,9.569-32.186c6.955-8.707,19.139-14.382,30.461-14.382
+          c36.108,0,54.802,48.738,54.802,80.033c0,7.845-0.862,21.754-10.877,31.768C278.237,286.11,266.498,291.312,255.621,291.34z
+           M256.066,466.177c-46.54,0-76.556-22.171-76.556-53.049s27.846-41.311,37.416-44.787c18.276-6.093,41.755-6.982,45.677-6.982
+          c4.34,0,6.51,0,9.987,0.445c33.076,23.479,47.402,35.218,47.402,57.416C319.992,446.176,297.821,466.177,256.066,466.177z"/>
+        <polygon points="353.068,317.768 400.164,317.768 400.164,364.836 423.699,364.836 423.699,317.768 470.768,317.768
+          470.768,294.233 423.699,294.233 423.699,247.165 400.164,247.165 400.164,294.233 353.068,294.233     "/>
+        <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
+          C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
+          S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
+      </g>
+  </svg></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fsetup-hugo-blog%2fcontent%2f" target="_blank">
+  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+  <g>
+    <g>
+      <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
+        C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
+        S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
+      <path d="M317.739,482.617V306h58.279l9.208-58.529h-67.487v-29.348c0-15.272,5.007-29.849,26.928-29.849h43.813v-58.418h-62.201
+        c-52.298,0-66.569,34.438-66.569,82.175v35.413h-35.885V306h35.885v176.617H317.739L317.739,482.617z"/>
+    </g>
+  </svg>
+  </a>
+</div>
+<div class="clearfix"></div>
+<figure class="author-bio">
+<img class="bio-image" src="https://secure.gravatar.com/avatar/89e5f7614cb88cd573359a953a09aa6e?s=240" />
+<figcaption class="bio-text">Hannan Ali is a programmer who has a keen interest in using open source to develop this world. Open Source is really awesome and makes our lives better. You can check out the open source projects he is working on at his Github Repo.</figcaption>
+</figure>
+<hr>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'myopensourcejourney';
+    var disqus_identifier = 'https:\/\/abdulhannanali.github.io\/my-opensource-journey\/setup-hugo-blog\/content\/';
+    var disqus_title = 'How to setup a blog using Hugo';
+    var disqus_url = 'https:\/\/abdulhannanali.github.io\/my-opensource-journey\/setup-hugo-blog\/content\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+<div class="clear"></div>
+</div>
+<footer id="footer" style="color: #7A7B7C; background-color: #3A3B3C;background-image: url(https://abdulhannanali.github.io/my-opensource-journey//img/texture.png),linear-gradient(to bottom, #3A3B3C, #1d1e1e); background-repeat: repeat, no-repeat; background-position: left top, left top; background-size: 100px 100px, 100% 100%;">
+  <div id="footer-container">
+  <div class="footer-column">Some text here.</div>
+  <div class="footer-column">Some different text here.</div>
+  <div class="footer-column">Even more different text here.</div>
+  <div class="clearfix"></div>
+  </div>
+  <div id="copyright">Site Licensed under GNU GPL V3.0</div>
+</footer>
+<script src="https://abdulhannanali.github.io/my-opensource-journey//js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your Google Analytics tracking id', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</div>
+</body>
+    <link rel="shortcut icon" href="https://abdulhannanali.github.io/my-opensource-journey//img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://abdulhannanali.github.io/my-opensource-journey//img/apple-touch-icon.jpg" />
+</html>
+
