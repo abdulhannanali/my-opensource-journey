@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>What-opensource-means-to-mes on My open source journey</title>
+    <link>https://abdulhannanali.github.io/my-opensource-journey/what-opensource-means-to-me/</link>
+    <description>Recent content in What-opensource-means-to-mes on My open source journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Site Licensed under GNU GPL V3.0</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 21:43:17 +0500</lastBuildDate>
+    <atom:link href="https://abdulhannanali.github.io/my-opensource-journey/what-opensource-means-to-me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What open source means to me?</title>
+      <link>https://abdulhannanali.github.io/my-opensource-journey/what-opensource-means-to-me/content/</link>
+      <pubDate>Fri, 01 Jan 2016 21:43:17 +0500</pubDate>
+      
+      <guid>https://abdulhannanali.github.io/my-opensource-journey/what-opensource-means-to-me/content/</guid>
+      <description>
+
+&lt;h1 id=&#34;what-open-source-means-to-me:05301946b75cb988bc2be8549079b4fa&#34;&gt;What open source means to me?&lt;/h1&gt;
+
+&lt;h2 id=&#34;open-source-in-general:05301946b75cb988bc2be8549079b4fa&#34;&gt;Open Source in general&lt;/h2&gt;
+
+&lt;p&gt;This is a topic that has really deep meaning for me cos open source means a lot of today&amp;rsquo;s world and today&amp;rsquo;s life would have been unimaginable without open source. For me open source is one of the evolutionary stages human beings are going through in order to make societies more collaborative, more helpful, and peaceful. It&amp;rsquo;s the open source spirit that&amp;rsquo;s about promoting creativity and freedom to use and create what ever we can think of in this awesome world. It&amp;rsquo;s about &lt;strong&gt;not&lt;/strong&gt; having a monopoly of a few over human intellect but to use human intellect as a resource for the well being of the world we live in. So that cats can have a life they deserve. Open source can create harmony just as the Information sharing between our body parts make us a living being. It&amp;rsquo;s &lt;strong&gt;Sharing&lt;/strong&gt; and &lt;em&gt;SHARING IS CARING&lt;/em&gt;. It&amp;rsquo;s about eliminating the culture of hostility and instead promoting harmony. 😄😄😄😄😄&lt;/p&gt;
+
+&lt;h3 id=&#34;open-source-in-tech:05301946b75cb988bc2be8549079b4fa&#34;&gt;Open Source in tech&lt;/h3&gt;
+
+&lt;p&gt;This I can actually talk about and make sense. OpenSource has been prevalent since the early days from Computers. It&amp;rsquo;s really important for innovation as a whole and that&amp;rsquo;s why it&amp;rsquo;s really important for Computer Science. From Homebrew hacker club to this day computer people. Even though we have come a long way from &lt;a href=&#34;https://en.wikipedia.org/wiki/ENIAC&#34;&gt;ENIAC&lt;/a&gt; which was a product of accumulation of huge open source contributions over decades and couldn&amp;rsquo;t have been possible without the open source ideas around it&amp;rsquo;s founders, the basic principles even today are pretty much the same.&lt;/p&gt;
+
+&lt;p&gt;Today the open source means the world for me as I daily work on open source technologies on my Laptop having Open Source Operating System called &lt;a href=&#34;https://kubuntu.org&#34;&gt;Kubuntu 15.10&lt;/a&gt;, in an Open Source text editor called &lt;a href=&#34;https://atom.io&#34;&gt;Atom&lt;/a&gt; on which I am currently typing this blog post, using Open Source run time environment called &lt;a href=&#34;https://nodejs.org&#34;&gt;Node.js&lt;/a&gt;. I use none of the frameworks which are not open source. Even a thought of closed source web development framework seems awful to me. I can go to &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; at any moment and open the source code of the development framework, I work on, called &lt;a href=&#34;https://expressjs.com&#34;&gt;ExpressJS&lt;/a&gt; and see for my self how all this works. What a relief, Humans are innately curious and the relief that no other party is stopping me from being curious is the best relief I can get in a day 😌😌😌😌😌. The sites out there I visit are also run hugely by open source software and that makes sense too cos I can learn what they use and can effectively contribute to the security and development of those sites too. (Inspired by this paragraph I have created a Gist including the open source projects. I use, in my daily routine. You can see it &lt;a href=&#34;https://gist.github.com/abdulhannanali/b602082bb9a778ba1080&#34;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;This fact also helps that I have such an awesome community including awesome people who will be there to help me whenever I raise an issue and will welcome my contributions too. Even if they don&amp;rsquo;t accept my contributions they will tell me why they didn&amp;rsquo;t accept it so I can actually learn and improve and resubmit my contributions.&lt;/p&gt;
+
+&lt;h3 id=&#34;open-source-for-education:05301946b75cb988bc2be8549079b4fa&#34;&gt;Open Source for education&lt;/h3&gt;
+
+&lt;p&gt;I wasn&amp;rsquo;t quite introduced to the programming world before a major open source effort, it was due to the open source projects such as &lt;a href=&#34;https://edx.org&#34;&gt;edX&lt;/a&gt; by universities like &lt;a href=&#34;https://mit.edu&#34;&gt;MIT&lt;/a&gt; and &lt;a href=&#34;https://harvard.edu&#34;&gt;Harvard&lt;/a&gt; which introduced me to this programming world.
+Open sourcing education has proven to have a really big impact, &lt;a href=&#34;http://news.mit.edu/2015/ahaan-rungta-mit-opencourseware-mitx-1116&#34;&gt;stories&lt;/a&gt; such as these are a proof of it.&lt;/p&gt;
+
+&lt;h3 id=&#34;open-source-for-peace:05301946b75cb988bc2be8549079b4fa&#34;&gt;Open Source for Peace&lt;/h3&gt;
+
+&lt;p&gt;The really fun thing about &lt;a href=&#34;https://en.wikipedia.org/wiki/Open-source_software&#34;&gt;OSS&lt;/a&gt; world online is that it&amp;rsquo;s the nicest place on internet too.&lt;/p&gt;
+
+&lt;p&gt;People anywhere in the world can learn and grow together. This allows for mutual understanding and collaboration which is essential and can solve any issue no matter how big it is. Something governments aren&amp;rsquo;t really good at doing. This seems like a small thing but this can start such a powerful chain reaction and can ultimately be the cause of world peace. World peace is something I would really like to have. Can we all have some more world peace?&lt;/p&gt;
+
+&lt;p&gt;Governments can also open source the software they have and this is one of the reasons I like and appreciate the projects such as &lt;a href=&#34;https://government.github.com&#34;&gt;government.github.com&lt;/a&gt;. If this is done effectively it&amp;rsquo;s a really cool thing because Governments can collaborate more effectively in improving their sectors. Really cool. Han?&lt;/p&gt;
+
+&lt;p&gt;This also really inspired me to create an Open Source Project called &lt;a href=&#34;https://damp-ridge-2114.herokuapp.com&#34;&gt;thepeacepledge&lt;/a&gt;. Please sign up for this peace pledge. Your sign up matters. It&amp;rsquo;s open source and you can see the code and maybe learn something too &lt;a href=&#34;https://github.com/abdulhannanali/the-peace-pledge&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;purpose-of-writing-this:05301946b75cb988bc2be8549079b4fa&#34;&gt;Purpose of writing this&lt;/h3&gt;
+
+&lt;p&gt;This was a task assigned by &lt;a href=&#34;https://fossasia.github.io&#34;&gt;FOSSASIA&lt;/a&gt; in &lt;a href=&#34;https://codein.withgoogle.com&#34;&gt;Google CodeIn 2015&lt;/a&gt;. FOSSASIA is a really awesome organization with purpose of improving the state of open source in the Asian continent which luckily carries most of the human weight. Please contribute to FOSSASIA since it&amp;rsquo;s really awesome, also share about FOSSASIA cos together we&amp;rsquo;ll make a difference.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
