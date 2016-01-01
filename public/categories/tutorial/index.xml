@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My open source journey</title>
-    <link>https://abdulhannanali.github.io/my-opensource-journey/</link>
-    <description>Recent content on My open source journey</description>
+    <title>Tutorial on My open source journey</title>
+    <link>https://abdulhannanali.github.io/my-opensource-journey/categories/tutorial/</link>
+    <description>Recent content in Tutorial on My open source journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Site Licensed under GNU GPL V3.0</copyright>
     <lastBuildDate>Fri, 01 Jan 2016 12:48:14 +0500</lastBuildDate>
-    <atom:link href="https://abdulhannanali.github.io/my-opensource-journey/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://abdulhannanali.github.io/my-opensource-journey/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to setup a blog using Hugo</title>
@@ -165,31 +165,6 @@ canonifyurls = true
 &lt;p&gt;I have made the source code of my-desi-journey available on Github if you want to take a look. Here is the repo &lt;a href=&#34;https://github.com/abdulhannanali/my-desi-journey&#34;&gt;link&lt;/a&gt;. Also don&amp;rsquo;t forget to check out the &lt;a href=&#34;https://docs.hugo.io&#34;&gt;hugo docs&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;../images/hugo.png&#34; alt=&#34;Hugo Image&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Happy new year</title>
-      <link>https://abdulhannanali.github.io/my-opensource-journey/happynewyear/content/</link>
-      <pubDate>Fri, 01 Jan 2016 12:44:03 +0500</pubDate>
-      
-      <guid>https://abdulhannanali.github.io/my-opensource-journey/happynewyear/content/</guid>
-      <description>
-
-&lt;h1 id=&#34;happy-new-year-2016:05301946b75cb988bc2be8549079b4fa&#34;&gt;Happy new year 2016.&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;../hny.gif&#34; alt=&#34;Happy New Year Google&#34; /&gt;
-Hope best for you in this awesome year and yeah this is that &lt;a href=&#34;http://www.google.com/doodles&#34;&gt;Google Happy New Year Image&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://abdulhannanali.github.io/my-opensource-journey/helloworld/</link>
-      <pubDate>Fri, 01 Jan 2016 12:39:20 +0500</pubDate>
-      
-      <guid>https://abdulhannanali.github.io/my-opensource-journey/helloworld/</guid>
-      <description>&lt;p&gt;The compulsory hello world post :)&lt;/p&gt;
 </description>
     </item>
     

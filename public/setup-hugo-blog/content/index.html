@@ -118,7 +118,7 @@
 <p>Hey there! I&rsquo;ve tried many of the static templating engines in the past. Most of them were based on <strong><a href="https://nodejs.org">node.js</a></strong> such as <a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>, <a href="https://hexo.io">Hexo</a>, <a href="https://github.com/flatiron/blacksmith">BlackSmith</a> but since I&rsquo;ve tried Hugo I am not going back now. Hugo is the best Static Website Engine <strong>EVER</strong>. Some of the features that are very impressive about Hugo include:</p>
 
 <ul>
-<li>It&rsquo;s speed</li>
+<li>It&rsquo;s speed and performance (check out this impressive <a href="https://www.youtube.com/watch?v=CdiDYZ51a2o">Hugo Benchmark Video</a>)</li>
 <li>It&rsquo;s ultra flexibility</li>
 <li>It&rsquo;s awesome collaborative community<br /></li>
 </ul>
@@ -140,11 +140,11 @@ This was me after seeing the rendering time and speed of hugo.</p>
 
 <p>Note: At the time of the writing this the current Hugo release is <a href="https://github.com/spf13/hugo/releases/tag/v0.15">v0.15</a>.</p>
 
-<p>The installation process as you my friend know varies depending upon the operating system but it&rsquo;s relatively simple. For me it was just one click and yes I am using <a href="https://kubuntu.org/">KUbuntu 15.10</a></p>
+<p>The installation process, as you know, varies depending upon the operating system but it&rsquo;s relatively simple. For me it was just a couple of clicks and I am using <a href="https://kubuntu.org/">KUbuntu 15.10</a></p>
 
 <h3 id="setting-up-a-new-blog:05301946b75cb988bc2be8549079b4fa">Setting up a new blog</h3>
 
-<p>It couldn&rsquo;t have been simpler than what Hugo has made it for us. Let&rsquo;s setup a blog called <strong>My desi journeys</strong>. Here we&rsquo;ll post our desi journey. Desi journeys can be pretty fun sometimes but a lot of the times they are pretty hectic but it&rsquo;ll make quite a story 😄.</p>
+<p>It couldn&rsquo;t have been simpler than what Hugo has made it for us. Let&rsquo;s setup a blog called <strong>My desi journeys</strong>. Here we&rsquo;ll post our desi journey.</p>
 
 <p>You can play with Hugo yourself and explore all the options Hugo provide by typing</p>
 
@@ -159,12 +159,12 @@ This was me after seeing the rendering time and speed of hugo.</p>
 cd my-desi-journey
 </code></pre>
 
-<p>this will generate the bare bones of our hugo static site and <code>cd</code> will change our directory to this blog. Now let&rsquo;s create a new post. This is also relatively very simple</p>
+<p>this will generate the bare bones of our hugo static site in a directory <code>my-desi-journey</code> and <code>cd</code> will change our <code>working directory</code> to this blog. Now let&rsquo;s create a new post. This is also relatively very simple</p>
 
 <pre><code class="language-bash">hugo new welcome/content.md
 </code></pre>
 
-<p><code>content.md</code> is the <strong>markdown</strong> file in the <code>welcome</code> directory Hugo will use for rendering the content in our blog. So let&rsquo;s go and add  some content.</p>
+<p>a <code>welcome</code> folder will be generated in the <code>content</code> folder. This folder is what hugo calls section and contains our <code>markdown</code> files. To read more about them go <a href="http://gohugo.io/content/sections/">here</a></p>
 
 <p>If you are not familiar already with Markdown you should be. It&rsquo;s the thing these days but the great thing is it&rsquo;s also very simple. Click <a href="http://git.io/vCMcp">here</a> to read more about it.</p>
 
@@ -177,13 +177,14 @@ title = &quot;Welcome&quot;
 +++
 </code></pre>
 
-<p>which is not very markdown in my honest opinion. This is called Front Matter in this case it&rsquo;s <a href="https://github.com/toml-lang/toml">TOML</a>. Front matter will contain your post meta data such as title, date etc.</p>
+<p>This is not very markdown style in my honest opinion. This is called Front Matter in this case it&rsquo;s <a href="https://github.com/toml-lang/toml">TOML</a>. Front matter will contain your post meta data such as title, date etc. Read more about Front Matter <a href="http://gohugo.io/content/front-matter/">here</a></p>
 
 <p>Down below the front matter you can add standard markdown finally. For this blog post I am adding this</p>
 
 <pre><code class="language-md"># Welcome to a blog about my desi journeys
 
-This is where we discuss all that desi cool + odd stuff
+This is where we discuss all that desi cool + odd stuff.
+OH YES! THIS IS THE SITE!!!
 </code></pre>
 
 <p>So after adding the markdown let&rsquo;s run the very first static version of site. Luckily for editing purposes hugo offers a really reliable and <strong>EXTREMELY FAST</strong> server which also watches for changes as you make them. Pretty cool? Yeah I know 😉😂😉.</p>
@@ -197,7 +198,7 @@ This is where we discuss all that desi cool + odd stuff
 
 <h3 id="getting-a-nice-cool-hugo-theme:05301946b75cb988bc2be8549079b4fa">Getting a nice cool Hugo theme</h3>
 
-<p>The awesome community of Hugo has made some really cool themes for Hugo. You can go and check&rsquo;em out here at <a href="https://themes.gohugo.io">themes.gohugo.io</a> and select the own you really ❤️ ❤️ ❤️ .
+<p>The awesome community of Hugo has made some really cool themes for Hugo. You can go and check&rsquo;em out here at <a href="https://themes.gohugo.io">themes.gohugo.io</a> and select the one you really love ❤️ ❤️ ❤️ .
 I am using <a href="https://themes.gohugo.io/allegiant/"><strong>ALLEGIANT</strong></a> the same one as this blog.</p>
 
 <p>Let&rsquo;s  execute some commands to use this theme</p>
@@ -208,15 +209,57 @@ git clone https://github.com/brycematheson/allegiant.git
 cd ..
 </code></pre>
 
-<p>We need a themes directory from which hugo reads themes then we clone the github repo of theme in this directory. Now we have the theme installed. We just need to use it in our static site.</p>
+<p>The first command will create a themes directory. We then change our <code>working directory</code> to this directory.
+After that third command will clone the <code>allegiant</code> themes repository in the local themes folder.</p>
 
 <p>Executing this will use the allegiant theme and build the drafts too</p>
 
-<pre><code>haxo --theme=allegiant --buildDrafts server
+<pre><code class="language-bash">hugo --theme=allegiant --buildDrafts server
 </code></pre>
 
 <p>Now if we go on to our web server. We can see our beautiful site with some content too.
-That&rsquo;s pretty nice. Now there&rsquo;s just one step left.</p>
+That&rsquo;s pretty nice.</p>
+
+<h3 id="configuring-our-hugo-blog:05301946b75cb988bc2be8549079b4fa">Configuring our hugo blog</h3>
+
+<p>There are some changes you still have to make to the blog hugo generated for you. You have to especially change the configurations. Modifying the <code>config.toml</code> will do it. The <code>config.toml</code> contains values for different variables our hugo blog uses for generating the static content.
+I have modified <code>my-desi-journey</code> configuration file to look like this</p>
+
+<pre><code class="language-toml">baseurl = &quot;https://abdulhannanali.github.io/my-desi-journey&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My open source journey&quot;
+author = &quot;Hannan Ali&quot;
+copyright = &quot;Site Licensed under GNU GPL V3.0&quot;
+canonifyurls = true
+</code></pre>
+
+<p>You can also specify the theme in the configuratin file by adding the line below</p>
+
+<pre><code class="language-toml">theme = &quot;allegiant&quot;
+</code></pre>
+
+<p>This will save you the hassle of specifying the same theme in the command line each time you run your Hugo Server.</p>
+
+<p>These are the configurations which are necessary in most cases. <code>allegiant</code> also has it&rsquo;s own configurations variables which you can set too. Read about configuring allegiant <a href="http://themes.gohugo.io/allegiant#configuration">here</a></p>
+
+<p>To read more about configurations and what else can you do with them click <a href="http://gohugo.io/overview/configuration/">here</a></p>
+
+<h3 id="generating-static-content-for-uploading:05301946b75cb988bc2be8549079b4fa">Generating static content for uploading</h3>
+
+<p>Now there&rsquo;s just one step left, generate the static content to upload to our site. This is done by omitting <code>server</code> keyword from the command we used above</p>
+
+<pre><code class="language-bash">hugo --theme=allegiant --buildDrafts
+</code></pre>
+
+<p>You will have a <code>public</code> folder generated in your hugo blog root directory. The contents of this <code>public</code> folder are what we need to upload to the static server in order to display it&rsquo;s contents. We are done here YAYYY! You have your very own cooked desi blog. Congrats!</p>
+
+<p><img src="../woo.gif" alt="WOOO!" /></p>
+
+<h3 id="source-code-and-hugo-docs:05301946b75cb988bc2be8549079b4fa">Source code and Hugo Docs</h3>
+
+<p>I have made the source code of my-desi-journey available on Github if you want to take a look. Here is the repo <a href="https://github.com/abdulhannanali/my-desi-journey">link</a>. Also don&rsquo;t forget to check out the <a href="https://docs.hugo.io">hugo docs</a>.</p>
+
+<p><img src="../images/hugo.png" alt="Hugo Image" /></p>
 
 </section>
 <div class="entry-links"></div>
