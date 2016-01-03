@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.Js on My open source journey</title>
+    <link>https://abdulhannanali.github.io/my-opensource-journey/tags/node/index.js/</link>
+    <description>Recent content in Node.Js on My open source journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Site Licensed under GNU GPL V3.0</copyright>
+    <lastBuildDate>Sun, 03 Jan 2016 14:32:48 +0500</lastBuildDate>
+    <atom:link href="https://abdulhannanali.github.io/my-opensource-journey/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Interview with TJ Holowaychuk</title>
+      <link>https://abdulhannanali.github.io/my-opensource-journey/interview-with-tj-holowaychuk/content/</link>
+      <pubDate>Sun, 03 Jan 2016 14:32:48 +0500</pubDate>
+      
+      <guid>https://abdulhannanali.github.io/my-opensource-journey/interview-with-tj-holowaychuk/content/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/tj&#34;&gt;TJ Holowaychuk&lt;/a&gt; is a really well known name in the open source world. He has done incredible contributions to the open source world and he started many notable open source projects especially in Node.js and Go world. It&amp;rsquo;s close to impossible to use &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; or &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt; and not get affected by the code he wrote or the open source projects he contributed to. TJ is an incredibly awesome person and there are hundreds of open source projects he has worked on. I came to know about TJ when I started using a very popular open source framework he created &lt;a href=&#34;http://expressjs.com/&#34;&gt;ExpressJS&lt;/a&gt;. Afterwards, &lt;a href=&#34;https://github.com/tj/co&#34;&gt;Co&lt;/a&gt;, &lt;a href=&#34;http://koajs.com/&#34;&gt;KoaJS&lt;/a&gt;, &lt;a href=&#34;https://github.com/tj/commander.js&#34;&gt;CommanderJS&lt;/a&gt; and many more awesome open source projects just kept me constantly reminding of him. He is also a really good photographer too, you can check out his photography &lt;a href=&#34;http://tjholowaychuk.com/&#34;&gt;here&lt;/a&gt; and his Github profile &lt;a href=&#34;https://github.com/tj&#34;&gt;here&lt;/a&gt;. TJ&amp;rsquo;s twitter handle is &lt;a href=&#34;https://twitter.com/tjholowaychuk&#34;&gt;@tjholowaychuk&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I emailed TJ today with the questions I wanted to ask him, he replied back in a few hours, so that&amp;rsquo;s very kind of him, here are the questions and his reply to those questions. This was a short interview. Hope you enjoy reading it!&lt;/p&gt;
+
+&lt;h5 id=&#34;what-does-open-source-mean-for-you-what-is-important-about-open-source-for-you:05301946b75cb988bc2be8549079b4fa&#34;&gt;What does open source mean for you? What is important about open source for you?&lt;/h5&gt;
+
+&lt;p&gt;I think for me the biggest thing is &lt;strong&gt;learning&lt;/strong&gt;. There&amp;rsquo;s no way I could have learned everything that I have without open-source. Not only reading other people&amp;rsquo;s work, but the contributions and feedback you get on your own code are really helpful. Naturally it feels great to have people enjoy something you&amp;rsquo;ve created as well, so that can be fun.&lt;/p&gt;
+
+&lt;h5 id=&#34;your-open-source-contributions-and-number-of-oss-projects-are-just-astounding-what-motivates-you-to-contribute-so-much-to-the-open-source-world:05301946b75cb988bc2be8549079b4fa&#34;&gt;Your open source contributions and number of OSS projects are just astounding. What motivates you to contribute so much to the open source world?&lt;/h5&gt;
+
+&lt;p&gt;It&amp;rsquo;s mostly just second nature, &lt;strong&gt;anything that can be open source, probably should be.&lt;/strong&gt; I find the quality of open-source is generally much higher than closed-source code, because you know everyone will be staring at it. Among other reasons the abstractions tend to be better in open-source as well since it has to be a more generic solution.&lt;/p&gt;
+
+&lt;!-- #### anything that can be open source should be open source --&gt;
+
+&lt;h5 id=&#34;any-current-interesting-open-source-projects-you-are-working-on:05301946b75cb988bc2be8549079b4fa&#34;&gt;Any current interesting open source projects you are working on?&lt;/h5&gt;
+
+&lt;p&gt;I&amp;rsquo;ve just started my own company (unnamed still haha), but as a single person team I&amp;rsquo;ve been looking more into using AWS Lambda for &amp;ldquo;serverless&amp;rdquo; architectures. I started &lt;a href=&#34;https://github.com/apex&#34;&gt;APEX&lt;/a&gt; which is still super new but if things go well it&amp;rsquo;ll be powering my product(s).&lt;/p&gt;
+
+&lt;h5 id=&#34;how-can-people-participate-more-actively-in-the-open-source-projects-you-contribute-to:05301946b75cb988bc2be8549079b4fa&#34;&gt;How can people participate more actively in the open source projects you contribute to?&lt;/h5&gt;
+
+&lt;p&gt;I try and document issues enough that someone could just jump in and create a pull-request for a feature if they&amp;rsquo;re interested. &lt;strong&gt;If someone contributes enough, I usually just add them as a contributor to the repo&lt;/strong&gt;. Some projects already have three or four contributors, in those cases it&amp;rsquo;s usually not a good idea to add too many new people.&lt;/p&gt;
+
+&lt;h5 id=&#34;what-do-you-like-most-about-the-go-lang:05301946b75cb988bc2be8549079b4fa&#34;&gt;What do you like most about the go lang?&lt;/h5&gt;
+
+&lt;p&gt;Almost everything! I love that Go has strong conventions, almost all Go code looks nearly identical. It&amp;rsquo;s fast enough for pretty much everything I do, has great tooling, built-in test framework, documentation generation, concurrency primitives, sequential code, explicit error handling, etc. Overall I think normalization is one of its strongest features, there&amp;rsquo;s no fighting over test frameworks or conventions.&lt;/p&gt;
+
+&lt;h5 id=&#34;will-you-attend-the-fossasia-summit-2016-from-march-18th-to-march-20th-in-singapore-fossasia-is-an-open-source-organization-playing-a-major-role-in-promoting-open-source-software-development-in-asia-you-can-learn-more-about-it-here-https-fossasia-github-io:05301946b75cb988bc2be8549079b4fa&#34;&gt;Will you attend the FOSSASIA Summit 2016 from March 18th to March 20th in Singapore? FOSSASIA is an open source organization playing a major role in promoting Open Source Software Development in Asia. You can learn more about it &lt;a href=&#34;https://fossasia.github.io&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;Haven&amp;rsquo;t heard of it! I rarely make it out to conferences so probably not :p&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;TJ has been actually one of the real open source aficionado for me and many others. He really believes in the open source culture and collaboration and has proved it practically. I believe and support his statement &lt;strong&gt;&amp;ldquo;anything that can be open source, probably should be&amp;rdquo;&lt;/strong&gt;. As TJ mentions, making the code open source has many benefits, one of which is, the open source code is better in quality and more generic because of the peer reviews and contributions, so open source is a great tool for learning and being better at programming too, feedback and peer review is an important part of learning. We also wish him best of luck for his new awesome company.&lt;/p&gt;
+
+&lt;p&gt;I would like to thank you for taking the time to read this article and would like to thank TJ Holowaychuk for kindly replying back to me. Here&amp;rsquo;s an awesome picture of TJ.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/7QL1pzC.jpg&#34; alt=&#34;TJ Holowaychuk Twitter Photo&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This interview was done as part of a task in &lt;a href=&#34;https://codein.withgoogle.com&#34;&gt;Google CodeIn&lt;/a&gt; with &lt;a href=&#34;https://fossasia.github.io&#34;&gt;FOSSASIA&lt;/a&gt; organization. FOSSASIA promotes open source development in the Asia and wants to improve the people&amp;rsquo;s lives using open source in Asia as well as all over the world. Please read more about the FOSSASIA &lt;a href=&#34;https://fossasia.org&#34;&gt;here&lt;/a&gt; and to learn more about the 2016 FOSSASIA summit happening in Singapore click &lt;a href=&#34;https://2016.fossasia.org&#34;&gt;here&lt;/a&gt;. Also, It would be awesome to have feedback from you on this article.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

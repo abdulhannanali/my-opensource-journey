@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="My open source journey">
+        <meta property="og:title" content="My open source journey">
+        <meta property="og:url" content="https://abdulhannanali.github.io/my-opensource-journey/interview-with-tj-holowaychuk/content/">
+        <meta property="og:description" content="">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2016-01-03T14:32:48&#43;05:00" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+        <title>Interview with TJ Holowaychuk &middot; My open source journey </title>
+        <link rel="canonical" href="https://abdulhannanali.github.io/my-opensource-journey/" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+        <link rel="stylesheet" type='text/css' href="https://abdulhannanali.github.io/my-opensource-journey/css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="https://abdulhannanali.github.io/my-opensource-journey/" alt="My open source journey"><h1 class="blog-title heading">My open source journey</h1></a>
+            <p class="blog-description"></p>
+        </div>
+    </header>
+<main class="content" role="main">
+	<div class="container">
+		<article class="interview-with-TJ-Holowaychuk">
+	<header class="post-header">
+        <h3 class="p-post-title">Interview with TJ Holowaychuk</h3>
+    </header>
+
+    <section class="post-content">
+        
+
+<p><a href="https://github.com/tj">TJ Holowaychuk</a> is a really well known name in the open source world. He has done incredible contributions to the open source world and he started many notable open source projects especially in Node.js and Go world. It&rsquo;s close to impossible to use <a href="http://nodejs.org">Node.js</a> or <a href="https://golang.org">Go</a> and not get affected by the code he wrote or the open source projects he contributed to. TJ is an incredibly awesome person and there are hundreds of open source projects he has worked on. I came to know about TJ when I started using a very popular open source framework he created <a href="http://expressjs.com/">ExpressJS</a>. Afterwards, <a href="https://github.com/tj/co">Co</a>, <a href="http://koajs.com/">KoaJS</a>, <a href="https://github.com/tj/commander.js">CommanderJS</a> and many more awesome open source projects just kept me constantly reminding of him. He is also a really good photographer too, you can check out his photography <a href="http://tjholowaychuk.com/">here</a> and his Github profile <a href="https://github.com/tj">here</a>. TJ&rsquo;s twitter handle is <a href="https://twitter.com/tjholowaychuk">@tjholowaychuk</a></p>
+
+<p>I emailed TJ today with the questions I wanted to ask him, he replied back in a few hours, so that&rsquo;s very kind of him, here are the questions and his reply to those questions. This was a short interview. Hope you enjoy reading it!</p>
+
+<h5 id="what-does-open-source-mean-for-you-what-is-important-about-open-source-for-you:05301946b75cb988bc2be8549079b4fa">What does open source mean for you? What is important about open source for you?</h5>
+
+<p>I think for me the biggest thing is <strong>learning</strong>. There&rsquo;s no way I could have learned everything that I have without open-source. Not only reading other people&rsquo;s work, but the contributions and feedback you get on your own code are really helpful. Naturally it feels great to have people enjoy something you&rsquo;ve created as well, so that can be fun.</p>
+
+<h5 id="your-open-source-contributions-and-number-of-oss-projects-are-just-astounding-what-motivates-you-to-contribute-so-much-to-the-open-source-world:05301946b75cb988bc2be8549079b4fa">Your open source contributions and number of OSS projects are just astounding. What motivates you to contribute so much to the open source world?</h5>
+
+<p>It&rsquo;s mostly just second nature, <strong>anything that can be open source, probably should be.</strong> I find the quality of open-source is generally much higher than closed-source code, because you know everyone will be staring at it. Among other reasons the abstractions tend to be better in open-source as well since it has to be a more generic solution.</p>
+
+<!-- #### anything that can be open source should be open source -->
+
+<h5 id="any-current-interesting-open-source-projects-you-are-working-on:05301946b75cb988bc2be8549079b4fa">Any current interesting open source projects you are working on?</h5>
+
+<p>I&rsquo;ve just started my own company (unnamed still haha), but as a single person team I&rsquo;ve been looking more into using AWS Lambda for &ldquo;serverless&rdquo; architectures. I started <a href="https://github.com/apex">APEX</a> which is still super new but if things go well it&rsquo;ll be powering my product(s).</p>
+
+<h5 id="how-can-people-participate-more-actively-in-the-open-source-projects-you-contribute-to:05301946b75cb988bc2be8549079b4fa">How can people participate more actively in the open source projects you contribute to?</h5>
+
+<p>I try and document issues enough that someone could just jump in and create a pull-request for a feature if they&rsquo;re interested. <strong>If someone contributes enough, I usually just add them as a contributor to the repo</strong>. Some projects already have three or four contributors, in those cases it&rsquo;s usually not a good idea to add too many new people.</p>
+
+<h5 id="what-do-you-like-most-about-the-go-lang:05301946b75cb988bc2be8549079b4fa">What do you like most about the go lang?</h5>
+
+<p>Almost everything! I love that Go has strong conventions, almost all Go code looks nearly identical. It&rsquo;s fast enough for pretty much everything I do, has great tooling, built-in test framework, documentation generation, concurrency primitives, sequential code, explicit error handling, etc. Overall I think normalization is one of its strongest features, there&rsquo;s no fighting over test frameworks or conventions.</p>
+
+<h5 id="will-you-attend-the-fossasia-summit-2016-from-march-18th-to-march-20th-in-singapore-fossasia-is-an-open-source-organization-playing-a-major-role-in-promoting-open-source-software-development-in-asia-you-can-learn-more-about-it-here-https-fossasia-github-io:05301946b75cb988bc2be8549079b4fa">Will you attend the FOSSASIA Summit 2016 from March 18th to March 20th in Singapore? FOSSASIA is an open source organization playing a major role in promoting Open Source Software Development in Asia. You can learn more about it <a href="https://fossasia.github.io">here</a></h5>
+
+<p>Haven&rsquo;t heard of it! I rarely make it out to conferences so probably not :p</p>
+
+<hr />
+
+<p>TJ has been actually one of the real open source aficionado for me and many others. He really believes in the open source culture and collaboration and has proved it practically. I believe and support his statement <strong>&ldquo;anything that can be open source, probably should be&rdquo;</strong>. As TJ mentions, making the code open source has many benefits, one of which is, the open source code is better in quality and more generic because of the peer reviews and contributions, so open source is a great tool for learning and being better at programming too, feedback and peer review is an important part of learning. We also wish him best of luck for his new awesome company.</p>
+
+<p>I would like to thank you for taking the time to read this article and would like to thank TJ Holowaychuk for kindly replying back to me. Here&rsquo;s an awesome picture of TJ.</p>
+
+<p><img src="http://i.imgur.com/7QL1pzC.jpg" alt="TJ Holowaychuk Twitter Photo" /></p>
+
+<hr />
+
+<p>This interview was done as part of a task in <a href="https://codein.withgoogle.com">Google CodeIn</a> with <a href="https://fossasia.github.io">FOSSASIA</a> organization. FOSSASIA promotes open source development in the Asia and wants to improve the people&rsquo;s lives using open source in Asia as well as all over the world. Please read more about the FOSSASIA <a href="https://fossasia.org">here</a> and to learn more about the 2016 FOSSASIA summit happening in Singapore click <a href="https://2016.fossasia.org">here</a>. Also, It would be awesome to have feedback from you on this article.</p>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+            
+            <p class="f-post-time"><time datetime="2016-01-03T14:32:48&#43;05:00">January 3, 2016</time></p>
+        </section>
+                        
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=Interview%20with%20TJ%20Holowaychuk&url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2finterview-with-tj-holowaychuk%2fcontent%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2finterview-with-tj-holowaychuk%2fcontent%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2finterview-with-tj-holowaychuk%2fcontent%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+
+            
+            	<span class="f-post-tags"><i class="fa fa-tag"></i>
+            	interview, open source, node.js
+            	</span>
+            
+        </section>
+                
+        <section id="comments">
+            <div id="disqus_thread" class="post-comments"></div>
+            <script type="text/javascript">
+              var disqus_shortname = 'myopensourcejourney';
+              (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>
+              Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </section>
+        
+        
+    </footer>
+</article>
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="https://abdulhannanali.github.io/my-opensource-journey/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>&copy; <a href="https://abdulhannanali.github.io/my-opensource-journey/"></a> 2015 | All rights reserved</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://abdulhannanali.github.io/my-opensource-journey/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+</body>
+</html>
