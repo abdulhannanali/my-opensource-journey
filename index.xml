@@ -24,13 +24,13 @@
 
 &lt;p&gt;Below are the interview questions I asked her and the answers she replied back with&lt;/p&gt;
 
-&lt;h3 id=&#34;tell-us-about-yourself-codebuddies-the-purpose-behind-it-and-it-s-beginnings:05301946b75cb988bc2be8549079b4fa&#34;&gt;Tell us about yourself, Codebuddies, the purpose behind it, and it&amp;rsquo;s beginnings&lt;/h3&gt;
+&lt;h4 id=&#34;tell-us-about-yourself-codebuddies-the-purpose-behind-it-and-it-s-beginnings:05301946b75cb988bc2be8549079b4fa&#34;&gt;Tell us about yourself, Codebuddies, the purpose behind it, and it&amp;rsquo;s beginnings&lt;/h4&gt;
 
 &lt;p&gt;Hello, I’m Linda! I work as a front-end developer at &lt;a href=&#34;http://actionkit.com/&#34;&gt;actionkit.com&lt;/a&gt;. I’d never taken a computer science class, and I started CodeBuddies because I was frustrated by how hard it was to improve at coding by yourself &amp;ndash; even with all the &lt;a href=&#34;https://en.wikipedia.org/wiki/Massive_open_online_course&#34;&gt;MOOCs&lt;/a&gt; and free resources out there &amp;ndash; if you did not have access to tech meetups or mentors close to where you lived. When I was first starting out, I personally benefited a lot from going to meetups and hackathons in NYC and learning from watching other people work. But then I discovered that scheduling a time with a study partner to walk through a coding tutorial together by screensharing via Google Hangouts was highly efficient, didn’t require a commute, and also helped me stay focused a lot better than if I was at a loud, social meetup. And thus the idea of peer-to-peer study motivation via virtual Google Hangouts was born.&lt;/p&gt;
 
 &lt;p&gt;CodeBuddies started out in the summer of 2014 as a bunch of Google group mailing lists, but has since expanded to include a Hangouts platform, a growing Slack community where an amazing group of volunteers consistently help each other out with code and advice and links to helpful resources, a Facebook group cross-run by The Odin Project volunteers, and a crowdsourced newsletter.&lt;/p&gt;
 
-&lt;h3 id=&#34;when-you-started-the-project-was-it-just-between-you-and-your-peers-did-you-intend-to-grow-it-to-a-big-level-how-were-you-able-to-launch-it:05301946b75cb988bc2be8549079b4fa&#34;&gt;When you started the project, was it just between you and your peers? Did you intend to grow it to a big level? How were you able to launch it?&lt;/h3&gt;
+&lt;h4 id=&#34;when-you-started-the-project-was-it-just-between-you-and-your-peers-did-you-intend-to-grow-it-to-a-big-level-how-were-you-able-to-launch-it:05301946b75cb988bc2be8549079b4fa&#34;&gt;When you started the project, was it just between you and your peers? Did you intend to grow it to a big level? How were you able to launch it?&lt;/h4&gt;
 
 &lt;p&gt;When I started the project in summer 2014, my goal was just to test out whether the idea of virtual hangouts could work as a learning enhancement. So I asked friends to study with me, or met strangers and pitched them the idea by linking them to a landing page about the idea and gave them access to a google group mailing list where they could propose their own study sessions/groups.&lt;/p&gt;
 
@@ -40,11 +40,11 @@
 
 &lt;p&gt;&lt;strong&gt;My overall goal for the project, still, is to create spaces that help people connect and help each other be more productive / learn faster.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;since-it-s-a-big-open-source-project-now-how-do-you-solve-the-bugs-and-overall-manage-and-maintain-the-project-s-repo:05301946b75cb988bc2be8549079b4fa&#34;&gt;Since it&amp;rsquo;s a big open source project now. How do you solve the bugs and overall manage and maintain the project&amp;rsquo;s repo?&lt;/h3&gt;
+&lt;h4 id=&#34;since-it-s-a-big-open-source-project-now-how-do-you-solve-the-bugs-and-overall-manage-and-maintain-the-project-s-repo:05301946b75cb988bc2be8549079b4fa&#34;&gt;Since it&amp;rsquo;s a big open source project now. How do you solve the bugs and overall manage and maintain the project&amp;rsquo;s repo?&lt;/h4&gt;
 
 &lt;p&gt;I track all the open features and bugs using Github issues, and label the specific issues that people could work on with the help wanted label.&lt;/p&gt;
 
-&lt;h3 id=&#34;code-is-just-one-of-the-part-how-do-you-maintain-a-positive-community-of-people-around-this-open-source-project-who-are-willing-to-contribute-and-help-with-codebuddies:05301946b75cb988bc2be8549079b4fa&#34;&gt;Code is just one of the part, how do you maintain a positive community of people around this open source project who are willing to contribute and help with Codebuddies?&lt;/h3&gt;
+&lt;h4 id=&#34;code-is-just-one-of-the-part-how-do-you-maintain-a-positive-community-of-people-around-this-open-source-project-who-are-willing-to-contribute-and-help-with-codebuddies:05301946b75cb988bc2be8549079b4fa&#34;&gt;Code is just one of the part, how do you maintain a positive community of people around this open source project who are willing to contribute and help with Codebuddies?&lt;/h4&gt;
 
 &lt;p&gt;The code learning community is incredible: people are incredibly kind to one another, generally, and are willing to pay it forward &amp;ndash; because at one point, they were stuck too, and it was a lot easier to get un-stuck with the help of a mentor. There’s also too much to learn, so not everyone has expertise on every single technical topic out there. I’ve seen mentees become mentors very quickly, and vice versa.&lt;/p&gt;
 
@@ -52,21 +52,21 @@
 
 &lt;p&gt;&lt;strong&gt;CodeBuddies also isn’t an organization in the traditional sense &amp;ndash; it doesn’t make any money, it’s not a non-profit or for-profit, it’s more or less all open-sourced and community-built, and I respect the time of the people who are willing to contribute.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;what-do-you-find-interesting-about-open-source-and-what-does-it-mean-to-you-how-has-open-source-changed-the-way-you-see-the-world:05301946b75cb988bc2be8549079b4fa&#34;&gt;What do you find interesting about Open Source and what does it mean to you? How has open source changed the way you see the world?&lt;/h3&gt;
+&lt;h4 id=&#34;what-do-you-find-interesting-about-open-source-and-what-does-it-mean-to-you-how-has-open-source-changed-the-way-you-see-the-world:05301946b75cb988bc2be8549079b4fa&#34;&gt;What do you find interesting about Open Source and what does it mean to you? How has open source changed the way you see the world?&lt;/h4&gt;
 
 &lt;p&gt;The Internet would be a lot different without open source. No open sourced libraries, no &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt; or &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;django&lt;/a&gt; or &lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt; or &lt;a href=&#34;https://www.meteor.com/&#34;&gt;Meteor&lt;/a&gt;. The tech industry is not boring because of open source.&lt;/p&gt;
 
 &lt;p&gt;Making CodeBuddies open-sourced is probably the best thing I could have done for it. The project is better and more exciting because of the collective wisdom of all of its contributors.&lt;/p&gt;
 
-&lt;h3 id=&#34;how-can-people-participate-in-contributing-to-the-codebuddies:05301946b75cb988bc2be8549079b4fa&#34;&gt;How can people participate in contributing to the codebuddies?&lt;/h3&gt;
+&lt;h4 id=&#34;how-can-people-participate-in-contributing-to-the-codebuddies:05301946b75cb988bc2be8549079b4fa&#34;&gt;How can people participate in contributing to the codebuddies?&lt;/h4&gt;
 
 &lt;p&gt;Contribute by asking questions or helping out on the &lt;a href=&#34;http://codebuddiesmeet.herokuapp.com/&#34;&gt;CodeBuddies Slack channel&lt;/a&gt;, submitting a shout-out or link to a project to the &lt;a href=&#34;http://codebuddies.org/weekly/&#34;&gt;newsletter&lt;/a&gt;, testing out &lt;a href=&#34;http://codebuddies.org/todayilearned&#34;&gt;codebuddies.org/todayilearned&lt;/a&gt;, saying hello in the #codebuddies-meta channel on the Slack, or adding your name to indicate your interest in collaborating on Hangouts 2.0 &lt;a href=&#34;http://bit.ly/codebuddies-hangouts-platform-v2-googledoc&#34;&gt;bit.ly/codebuddies-hangouts-platform-v2-googledoc&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;hangouts-2-0-is-under-development-what-do-you-want-it-to-accomplish-since-it-s-a-very-nice-example-of-the-evolution-of-a-community-oriented-open-source-project-can-you-tell-us-something-about-it:05301946b75cb988bc2be8549079b4fa&#34;&gt;Hangouts 2.0 is under development. What do you want it to accomplish? Since it’s a very nice example of the evolution of a community oriented open source project. Can you tell us something about it?&lt;/h3&gt;
+&lt;h4 id=&#34;hangouts-2-0-is-under-development-what-do-you-want-it-to-accomplish-since-it-s-a-very-nice-example-of-the-evolution-of-a-community-oriented-open-source-project-can-you-tell-us-something-about-it:05301946b75cb988bc2be8549079b4fa&#34;&gt;Hangouts 2.0 is under development. What do you want it to accomplish? Since it’s a very nice example of the evolution of a community oriented open source project. Can you tell us something about it?&lt;/h4&gt;
 
 &lt;p&gt;The mission of Hangouts 2.0 is to make it easier (than it currently is) for people to find silent study partners, pair programming partners, or project collaborators at any moment of the day. Right now Slack has been useful for chatting, but it’s still hard to tell who is working on what at any given moment, or might be working on the same thing.&lt;/p&gt;
 
-&lt;h3 id=&#34;what-message-and-advice-do-you-want-to-give-to-pakistani-women-and-also-women-in-general-worldwide-who-want-to-come-in-the-stem-field-and-also-contribute-in-the-open-source-world-since-women-have-less-than-2-0-of-open-source-contributions:05301946b75cb988bc2be8549079b4fa&#34;&gt;What message and advice do you want to give to Pakistani women and also women in general worldwide  who want to come in the STEM field  and also contribute in the open source world (since women have less than 2.0% of Open Source contributions)?&lt;/h3&gt;
+&lt;h4 id=&#34;what-message-and-advice-do-you-want-to-give-to-pakistani-women-and-also-women-in-general-worldwide-who-want-to-come-in-the-stem-field-and-also-contribute-in-the-open-source-world-since-women-have-less-than-2-0-of-open-source-contributions:05301946b75cb988bc2be8549079b4fa&#34;&gt;What message and advice do you want to give to Pakistani women and also women in general worldwide  who want to come in the STEM field  and also contribute in the open source world (since women have less than 2.0% of Open Source contributions)?&lt;/h4&gt;
 
 &lt;p&gt;I don’t understand all the reasons more Pakistani women aren’t in the STEM field, but I would encourage them to not be intimidated by STEM and to try it if they have the opportunity!&lt;/p&gt;
 
@@ -74,7 +74,7 @@
 
 &lt;p&gt;The key is to persevere!&lt;/p&gt;
 
-&lt;h3 id=&#34;will-you-join-fossasia-summit-2016-from-march-18th-to-20th-in-singapore-it-s-the-largest-open-source-summit-of-asia-you-can-learn-more-here-http-2016-fossasia-org:05301946b75cb988bc2be8549079b4fa&#34;&gt;Will you join FOSSASIA summit 2016 from March 18th to 20th in Singapore? It’s the largest open source summit of Asia. You can learn more &lt;a href=&#34;http://2016.fossasia.org/&#34;&gt;here&lt;/a&gt;.&lt;/h3&gt;
+&lt;h4 id=&#34;will-you-join-fossasia-summit-2016-from-march-18th-to-20th-in-singapore-it-s-the-largest-open-source-summit-of-asia-you-can-learn-more-here-http-2016-fossasia-org:05301946b75cb988bc2be8549079b4fa&#34;&gt;Will you join FOSSASIA summit 2016 from March 18th to 20th in Singapore? It’s the largest open source summit of Asia. You can learn more &lt;a href=&#34;http://2016.fossasia.org/&#34;&gt;here&lt;/a&gt;.&lt;/h4&gt;
 
 &lt;p&gt;Very cool! Not sure I can make it since I’m pretty far away, but sounds like a fun summit.&lt;/p&gt;
 
