@@ -20,9 +20,12 @@
 
 &lt;p&gt;React is a JavaScript library for building composable user interfaces. It&amp;rsquo;s the &lt;strong&gt;V&lt;/strong&gt; in MVC. React is used by many of the big names in tech and it&amp;rsquo;s heavily used by it&amp;rsquo;s creator &lt;a href=&#34;https://facebook.com&#34;&gt;Facebook&lt;/a&gt;, in it&amp;rsquo;s own products. You can learn more about React and it&amp;rsquo;s getting started guides &lt;a href=&#34;https://facebook.github.io/react&#34;&gt;here&lt;/a&gt;. Trust me, it&amp;rsquo;s worth the effort ;)&lt;/p&gt;
 
+&lt;p&gt;My todo app is live for demo at &lt;a href=&#34;https://abdulhannanali.github.io/todo-react/&#34;&gt;https://abdulhannanali.github.io/todo-react/&lt;/a&gt; . Hope you try :)&lt;/p&gt;
+
 &lt;h4 id=&#34;getting-started-with-react:05301946b75cb988bc2be8549079b4fa&#34;&gt;Getting started with React&lt;/h4&gt;
 
-&lt;p&gt;The best way to get started with anything is to jump right in it, as quickly as possible, and React team has made it very simple to downlaod the &lt;a href=&#34;http://facebook.github.io/react/docs/getting-started.html&#34;&gt;Starter Kit&lt;/a&gt; of the latest version of the react. It contains react source files and also some little nice examples to play with.&lt;/p&gt;
+&lt;p&gt;The best way to get started with anything is to jump right in it, as quickly as possible, and
+React team has made it very simple to downlaod the &lt;a href=&#34;http://facebook.github.io/react/docs/getting-started.html&#34;&gt;Starter Kit&lt;/a&gt; of the latest version of the react. It contains react source files and also some little nice examples to play with.&lt;/p&gt;
 
 &lt;p&gt;After downloading this, I also followed the React tutorial on &lt;a href=&#34;http://facebook.github.io/react/docs/thinking-in-react.html&#34;&gt;Thinking in React&lt;/a&gt; and it was quite comprehensive and made me able to think my Todo App UI the React way.&lt;/p&gt;
 
