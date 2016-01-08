@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Todo-app-using-reactjs on My open source journey</title>
+    <link>https://abdulhannanali.github.io/my-opensource-journey/todo-app-using-reactjs/</link>
+    <description>Recent content in Todo-app-using-reactjs on My open source journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Site Licensed under GNU GPL V3.0</copyright>
+    <lastBuildDate>Fri, 08 Jan 2016 11:00:37 +0500</lastBuildDate>
+    <atom:link href="https://abdulhannanali.github.io/my-opensource-journey/todo-app-using-reactjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building a Todo App Using React</title>
+      <link>https://abdulhannanali.github.io/my-opensource-journey/todo-app-using-reactjs/content/</link>
+      <pubDate>Fri, 08 Jan 2016 11:00:37 +0500</pubDate>
+      
+      <guid>https://abdulhannanali.github.io/my-opensource-journey/todo-app-using-reactjs/content/</guid>
+      <description>
+
+&lt;p&gt;React is a JavaScript library for building composable user interfaces. It&amp;rsquo;s the &lt;strong&gt;V&lt;/strong&gt; in MVC. React is used by many of the big names in tech and it&amp;rsquo;s heavily used by it&amp;rsquo;s creator &lt;a href=&#34;https://facebook.com&#34;&gt;Facebook&lt;/a&gt;, in it&amp;rsquo;s own products. You can learn more about React and it&amp;rsquo;s getting started guides &lt;a href=&#34;https://facebook.github.io/react&#34;&gt;here&lt;/a&gt;. Trust me, it&amp;rsquo;s worth the effort ;)&lt;/p&gt;
+
+&lt;h4 id=&#34;getting-started-with-react:05301946b75cb988bc2be8549079b4fa&#34;&gt;Getting started with React&lt;/h4&gt;
+
+&lt;p&gt;The best way to get started with anything is to jump right in it, as quickly as possible, and React team has made it very simple to downlaod the &lt;a href=&#34;http://facebook.github.io/react/docs/getting-started.html&#34;&gt;Starter Kit&lt;/a&gt; of the latest version of the react. It contains react source files and also some little nice examples to play with.&lt;/p&gt;
+
+&lt;p&gt;After downloading this, I also followed the React tutorial on &lt;a href=&#34;http://facebook.github.io/react/docs/thinking-in-react.html&#34;&gt;Thinking in React&lt;/a&gt; and it was quite comprehensive and made me able to think my Todo App UI the React way.&lt;/p&gt;
+
+&lt;p&gt;After a little practice with React, writing simple little programs, I was able to divide my Todo App UI into different components. The UI was divided into the following components for the purposes of modularity.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TodoList Component (Main TodoList Component holds everything together)&lt;/li&gt;
+&lt;li&gt;TodoForm Component (Form Comonent for the addition of todos)&lt;/li&gt;
+&lt;li&gt;Todos Component&lt;/li&gt;
+&lt;li&gt;Todo Component&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;build-system-with-gulp-http-gulpjs-com:05301946b75cb988bc2be8549079b4fa&#34;&gt;Build System with &lt;a href=&#34;http://gulpjs.com&#34;&gt;gulp&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;I upped my game by moving from the browser based babel and react, to the way &lt;strong&gt;pros&lt;/strong&gt; write their React code. Yes, they write it in node using browserify. I choose &lt;a href=&#34;http://gulpjs.com&#34;&gt;gulp&lt;/a&gt; cos it&amp;rsquo;s actually the best build system. Writing a build file was actually a no easy thing though. This let me use all the ES6, Babel, React and all the Node goodness for my browser. After the references from many tutorials and some documentation scrolling, I was able to put together a &lt;a href=&#34;gulpfile.js&#34;&gt;gulpfile&lt;/a&gt;. You can see the source code of my gulpfile.js &lt;a href=&#34;https://gist.github.com/abdulhannanali/4249c21d7dccea33f6b9&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;starting-the-real-code:05301946b75cb988bc2be8549079b4fa&#34;&gt;Starting the real code&lt;/h4&gt;
+
+&lt;p&gt;I took a mixed top down approach for writing the code, it&amp;rsquo;s just the way how the functionality I thought was designed. The major source files for my ReactTodo App were in &lt;code&gt;src&lt;/code&gt; folder. I didn&amp;rsquo;t worry about managing states at all and the first version of my react app was static built using dummy data and it was quite beneficial. At some point I just shifted from using &lt;code&gt;React.createClass&lt;/code&gt; to &lt;code&gt;ES6 Classes&lt;/code&gt; because of the less code clutter.&lt;/p&gt;
+
+&lt;p&gt;The components layouts were made sophisticated after each iteration till the final product which is now demoed on the site.&lt;/p&gt;
+
+&lt;h4 id=&#34;managing-states-in-react-application:05301946b75cb988bc2be8549079b4fa&#34;&gt;Managing states in React application&lt;/h4&gt;
+
+&lt;p&gt;Most of the application state was managed in the TodoListComponent since it was a common component between TodoForm and Todos. The todos data was a state of TodoListComponent and was passed as a property to Todos for display. If you are not familiar with how properties are passed in React, this is one of the way to do it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-jsx&#34;&gt;&amp;lt;Todos todos={todosData} /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, I am passing todosData to &lt;code&gt;Todos&lt;/code&gt; so it can do something with it.&lt;/p&gt;
+
+&lt;h4 id=&#34;inverse-data-flow-for-events:05301946b75cb988bc2be8549079b4fa&#34;&gt;Inverse data flow for events&lt;/h4&gt;
+
+&lt;p&gt;React goes from top to bottom and that means properties passed to a Component can&amp;rsquo;t be mutated, so in order to change state of a Parent from a child, a function is passed as a reference which is then called with data, when the state is to be changed. An example of this,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;updateTodo: function () {I implemented inverse
+
+  // some todo update logic
+},
+render: function () {
+  &amp;lt;Todo updateTodo={this.updateTodo}/&amp;gt;  
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this way, inverse data flow was implemented at many places in my app.&lt;/p&gt;
+
+&lt;p&gt;The eventing in my app was done using inverse data flow. You can see source code for more information on how I actually implemented them.&lt;/p&gt;
+
+&lt;h5 id=&#34;rendering-in-the-reactdom:05301946b75cb988bc2be8549079b4fa&#34;&gt;Rendering in the ReactDOM&lt;/h5&gt;
+
+&lt;p&gt;Final rendering was a really simple process and it was done in &lt;code&gt;src/index.js&lt;/code&gt;. Here, TodoListComponent was required and then rendered within the DOM element with &lt;code&gt;id&lt;/code&gt; &amp;ldquo;divContainer&amp;rdquo; using &lt;code&gt;ReactDOM.render&lt;/code&gt; function&lt;/p&gt;
+
+&lt;h5 id=&#34;it-was-awesome:05301946b75cb988bc2be8549079b4fa&#34;&gt;IT WAS AWESOME&lt;/h5&gt;
+
+&lt;p&gt;My experience with React was awesome, It&amp;rsquo;s simplicity and Composition has made me love the client side development. In the near future, I am going to do something really nice with React and also using it in combination with other goodies from Facebook such as Flux and Relay.&lt;/p&gt;
+
+&lt;h5 id=&#34;opensource-and-contribution:05301946b75cb988bc2be8549079b4fa&#34;&gt;OpenSource and Contribution&lt;/h5&gt;
+
+&lt;p&gt;The code of my todo list is open source and you can view it &lt;a href=&#34;https://github.com/abdulhannanali/todo-react&#34;&gt;here&lt;/a&gt;. Please feel to contribute. :)&lt;/p&gt;
+
+&lt;h5 id=&#34;google-codein:05301946b75cb988bc2be8549079b4fa&#34;&gt;Google CodeIn&lt;/h5&gt;
+
+&lt;p&gt;This blog post was written as part of a task in &lt;a href=&#34;https://codein.withgoogle.com&#34;&gt;Google CodeIn&lt;/a&gt; with &lt;a href=&#34;https://fossasia.org&#34;&gt;FOSSASIA&lt;/a&gt; organization. FOSSASIA is playing a major role in promoting open source culture and development in the Asia and all over the world. Learn more about FOSSASIA &lt;a href=&#34;https://fossasia.org&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

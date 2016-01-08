@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="My open source journey">
+        <meta property="og:title" content="My open source journey">
+        <meta property="og:url" content="https://abdulhannanali.github.io/my-opensource-journey/todo-app-using-reactjs/content/">
+        <meta property="og:description" content="">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2016-01-08T11:00:37&#43;05:00" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+        <title>Building a Todo App Using React &middot; My open source journey </title>
+        <link rel="canonical" href="https://abdulhannanali.github.io/my-opensource-journey/" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+        <link rel="stylesheet" type='text/css' href="https://abdulhannanali.github.io/my-opensource-journey/css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="https://abdulhannanali.github.io/my-opensource-journey/" alt="My open source journey"><h1 class="blog-title heading">My open source journey</h1></a>
+            <p class="blog-description"></p>
+        </div>
+    </header>
+<main class="content" role="main">
+	<div class="container">
+		<article class="todo-app-using-reactjs">
+	<header class="post-header">
+        <h3 class="p-post-title">Building a Todo App Using React</h3>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>React is a JavaScript library for building composable user interfaces. It&rsquo;s the <strong>V</strong> in MVC. React is used by many of the big names in tech and it&rsquo;s heavily used by it&rsquo;s creator <a href="https://facebook.com">Facebook</a>, in it&rsquo;s own products. You can learn more about React and it&rsquo;s getting started guides <a href="https://facebook.github.io/react">here</a>. Trust me, it&rsquo;s worth the effort ;)</p>
+
+<h4 id="getting-started-with-react:05301946b75cb988bc2be8549079b4fa">Getting started with React</h4>
+
+<p>The best way to get started with anything is to jump right in it, as quickly as possible, and React team has made it very simple to downlaod the <a href="http://facebook.github.io/react/docs/getting-started.html">Starter Kit</a> of the latest version of the react. It contains react source files and also some little nice examples to play with.</p>
+
+<p>After downloading this, I also followed the React tutorial on <a href="http://facebook.github.io/react/docs/thinking-in-react.html">Thinking in React</a> and it was quite comprehensive and made me able to think my Todo App UI the React way.</p>
+
+<p>After a little practice with React, writing simple little programs, I was able to divide my Todo App UI into different components. The UI was divided into the following components for the purposes of modularity.</p>
+
+<ul>
+<li>TodoList Component (Main TodoList Component holds everything together)</li>
+<li>TodoForm Component (Form Comonent for the addition of todos)</li>
+<li>Todos Component</li>
+<li>Todo Component</li>
+</ul>
+
+<h4 id="build-system-with-gulp-http-gulpjs-com:05301946b75cb988bc2be8549079b4fa">Build System with <a href="http://gulpjs.com">gulp</a></h4>
+
+<p>I upped my game by moving from the browser based babel and react, to the way <strong>pros</strong> write their React code. Yes, they write it in node using browserify. I choose <a href="http://gulpjs.com">gulp</a> cos it&rsquo;s actually the best build system. Writing a build file was actually a no easy thing though. This let me use all the ES6, Babel, React and all the Node goodness for my browser. After the references from many tutorials and some documentation scrolling, I was able to put together a <a href="gulpfile.js">gulpfile</a>. You can see the source code of my gulpfile.js <a href="https://gist.github.com/abdulhannanali/4249c21d7dccea33f6b9">here</a>.</p>
+
+<h4 id="starting-the-real-code:05301946b75cb988bc2be8549079b4fa">Starting the real code</h4>
+
+<p>I took a mixed top down approach for writing the code, it&rsquo;s just the way how the functionality I thought was designed. The major source files for my ReactTodo App were in <code>src</code> folder. I didn&rsquo;t worry about managing states at all and the first version of my react app was static built using dummy data and it was quite beneficial. At some point I just shifted from using <code>React.createClass</code> to <code>ES6 Classes</code> because of the less code clutter.</p>
+
+<p>The components layouts were made sophisticated after each iteration till the final product which is now demoed on the site.</p>
+
+<h4 id="managing-states-in-react-application:05301946b75cb988bc2be8549079b4fa">Managing states in React application</h4>
+
+<p>Most of the application state was managed in the TodoListComponent since it was a common component between TodoForm and Todos. The todos data was a state of TodoListComponent and was passed as a property to Todos for display. If you are not familiar with how properties are passed in React, this is one of the way to do it:</p>
+
+<pre><code class="language-jsx">&lt;Todos todos={todosData} /&gt;
+</code></pre>
+
+<p>Here, I am passing todosData to <code>Todos</code> so it can do something with it.</p>
+
+<h4 id="inverse-data-flow-for-events:05301946b75cb988bc2be8549079b4fa">Inverse data flow for events</h4>
+
+<p>React goes from top to bottom and that means properties passed to a Component can&rsquo;t be mutated, so in order to change state of a Parent from a child, a function is passed as a reference which is then called with data, when the state is to be changed. An example of this,</p>
+
+<pre><code class="language-js">updateTodo: function () {I implemented inverse
+
+  // some todo update logic
+},
+render: function () {
+  &lt;Todo updateTodo={this.updateTodo}/&gt;  
+}
+</code></pre>
+
+<p>In this way, inverse data flow was implemented at many places in my app.</p>
+
+<p>The eventing in my app was done using inverse data flow. You can see source code for more information on how I actually implemented them.</p>
+
+<h5 id="rendering-in-the-reactdom:05301946b75cb988bc2be8549079b4fa">Rendering in the ReactDOM</h5>
+
+<p>Final rendering was a really simple process and it was done in <code>src/index.js</code>. Here, TodoListComponent was required and then rendered within the DOM element with <code>id</code> &ldquo;divContainer&rdquo; using <code>ReactDOM.render</code> function</p>
+
+<h5 id="it-was-awesome:05301946b75cb988bc2be8549079b4fa">IT WAS AWESOME</h5>
+
+<p>My experience with React was awesome, It&rsquo;s simplicity and Composition has made me love the client side development. In the near future, I am going to do something really nice with React and also using it in combination with other goodies from Facebook such as Flux and Relay.</p>
+
+<h5 id="opensource-and-contribution:05301946b75cb988bc2be8549079b4fa">OpenSource and Contribution</h5>
+
+<p>The code of my todo list is open source and you can view it <a href="https://github.com/abdulhannanali/todo-react">here</a>. Please feel to contribute. :)</p>
+
+<h5 id="google-codein:05301946b75cb988bc2be8549079b4fa">Google CodeIn</h5>
+
+<p>This blog post was written as part of a task in <a href="https://codein.withgoogle.com">Google CodeIn</a> with <a href="https://fossasia.org">FOSSASIA</a> organization. FOSSASIA is playing a major role in promoting open source culture and development in the Asia and all over the world. Learn more about FOSSASIA <a href="https://fossasia.org">here</a></p>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+            
+            <p class="f-post-time"><time datetime="2016-01-08T11:00:37&#43;05:00">January 8, 2016</time></p>
+        </section>
+                        
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=Building%20a%20Todo%20App%20Using%20React&url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2ftodo-app-using-reactjs%2fcontent%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2ftodo-app-using-reactjs%2fcontent%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2ftodo-app-using-reactjs%2fcontent%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+
+            
+        </section>
+                
+        <section id="comments">
+            <div id="disqus_thread" class="post-comments"></div>
+            <script type="text/javascript">
+              var disqus_shortname = 'myopensourcejourney';
+              (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>
+              Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </section>
+        
+        
+    </footer>
+</article>
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="https://abdulhannanali.github.io/my-opensource-journey/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>Site is published under General Public License 3.0. Click <a href="https://github.com/abdulhannanali/my-opensource-journey/blob/master/LICENSE">here</a> to learn more</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://abdulhannanali.github.io/my-opensource-journey/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+
+</body>
+</html>
