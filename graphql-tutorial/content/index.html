@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="My open source journey">
+        <meta property="og:title" content="My open source journey">
+        <meta property="og:url" content="https://abdulhannanali.github.io/my-opensource-journey/graphql-tutorial/content/">
+        <meta property="og:description" content="">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2016-01-09T23:00:48&#43;05:00" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+        <title>GraphQL For Newbs &middot; My open source journey </title>
+        <link rel="canonical" href="https://abdulhannanali.github.io/my-opensource-journey/" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+        <link rel="stylesheet" type='text/css' href="https://abdulhannanali.github.io/my-opensource-journey/css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="https://abdulhannanali.github.io/my-opensource-journey/" alt="My open source journey"><h1 class="blog-title heading">My open source journey</h1></a>
+            <p class="blog-description"></p>
+        </div>
+    </header>
+<main class="content" role="main">
+	<div class="container">
+		<article class="graphql-tutorial">
+	<header class="post-header">
+        <h3 class="p-post-title">GraphQL For Newbs</h3>
+    </header>
+
+    <section class="post-content">
+        
+
+<h3 id="what-in-the-world-graphql-is:05301946b75cb988bc2be8549079b4fa">What in the world GraphQL is?</h3>
+
+<p><img src="../graphql.png" alt="GraphQL Logo" />
+There&rsquo;s a lot of mystery behind GraphQL but it&rsquo;s not difficult to understand, what it actually is, and what it does. Because of it&rsquo;s really Sci Fi name I was sure I won&rsquo;t understand it. But after learning more about it. I was like this dog. Chilling!
+<img src="../chilldog.gif" alt="GIF of a dog chilling" /></p>
+
+<p>GraphQL is used to build data mongering client applications in a really intuitive way. It&rsquo;s a Query Language used to request the data from the server. You send a GraphQL query to the server and it sends you the data back (exampele: JSON Payload) according to the query you sent. No need for a hundred different REST routes in order for getting complete data you want.</p>
+
+<p>GraphQL is an application query language. It makes no assumption of the protocol you are using, the query is just a plain string which you give to the GraphQL implementation.</p>
+
+<p>GraphQL is also hiearchial, which means you can accomplish much more in one query too than the rest lets you do in many queries.</p>
+
+<p>Client decides how the data needs to be structured, instead of server which lets us make it <strong>backwards compatible</strong> and at the same time upgrade for the newer version of clients.</p>
+
+<p>Data requirements probably will change with time but it doesn&rsquo;t always mean you will be allowed to change the client according to your data specs too. GraphQL allows you to make flexible queries and leaves defining the data structure to the client. This is a really helpful image I found from LearnGraphQL on how GraphQL application communicates for data
+<img src="../graphqlflow.png" alt="GraphQL from LearnGraphQL" /></p>
+
+<p>GraphQL is strongly typed, providing you with awesome development stage compiling features which are really helpful for the debugging and let&rsquo;s you debug the queries and code before it all ships.</p>
+
+<p>You can access the GraphQL specification <a href="http://facebook.github.io/graphql/">here</a> and maybe create an implementation of it for the language you love.</p>
+
+<p>There&rsquo;s a great blog post on <a href="https://facebook.github.io/react">React Github Pages</a> about GraphQL <a href="https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html">here</a>. It explains many of the pros of the GraphQL and why there was a need of GraphQL in facebook internally.</p>
+
+<h3 id="querying-the-graphql:05301946b75cb988bc2be8549079b4fa">Querying the GraphQL</h3>
+
+<p>We have hundred recipes in our Grand Cooking database. We need to retrieve the latest one  with the following information hiearchy if possible:</p>
+
+<ul>
+<li>latestRecipe
+
+<ul>
+<li>id</li>
+<li>title</li>
+<li>description</li>
+<li>ingredients</li>
+<li>uploader
+
+<ul>
+<li>id</li>
+<li>dateJoined</li>
+<li>email</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>The GraphQL query for it will look like this</p>
+
+<pre><code class="language-graphql">{
+	latestRecipe {
+		_id,
+		title,
+		description,
+		ingredients,
+		uploader {
+			_id
+			dateJoined
+		}
+	}
+}
+</code></pre>
+
+<p>IMHO, the query doesn&rsquo;t look much different than what we specified in the bulleted list. Now, provided database has the data we requested and GraphQL is implemented on the back end we will get our following neat response in form of a JSON payload.</p>
+
+<pre><code class="language-json">{
+	&quot;data&quot;: {
+		&quot;latestRecipe&quot;: {
+			&quot;_id&quot;: &quot;31231&quot;,
+
+			&quot;title&quot;: &quot;Best Big, Fat, Chewy Chocolate Chip Cookie&quot;,
+			&quot;instructions&quot;: &quot;Preheat the oven to 325 degrees F (165 degrees C). Grease cookie sheets or line with parchment paper.Sift together the flour, baking soda and salt; set aside.In a medium bowl, cream together the melted butter, brown sugar and white sugar until well blended. Beat in the vanilla, egg, and egg yolk until light and creamy. Mix in the sifted ingredients until just blended. Stir in the chocolate chips by hand using a wooden spoon. Drop cookie dough 1/4 cup at a time onto the prepared cookie sheets. Cookies should be about 3 inches apart.Bake for 15 to 17 minutes in the preheated oven, or until the edges are lightly toasted. Cool on baking sheets for a few minutes before transferring to wire racks to cool completely.&quot;,
+
+			&quot;ingredients&quot;: [
+				&quot;2 cups all-purpose flour&quot;,
+				&quot;1/2 teaspoon baking soda&quot;,
+				&quot;1/2 teaspoon salt&quot;,
+				&quot;2 cups semisweet chocolate chips&quot;
+			],
+
+			&quot;uploader&quot;: {
+				&quot;name&quot;: &quot;ELIZABETHBH&quot;,
+				&quot;_id&quot;: &quot;183690&quot;
+			}
+		}
+	}
+}
+
+</code></pre>
+
+<p>Don&rsquo;t try to make cookies from this recipe though, for this complete recipe by ELIZABETH click <a href="http://allrecipes.com/recipe/25037/best-big-fat-chewy-chocolate-chip-cookie/">here (AllRecipes.com link)</a></p>
+
+<p>Look at the JSON Payload, we have achieved so much in one query, so it&rsquo;s automatically going to be really helpful in our <strong>product development</strong>.</p>
+
+<p>Learn more about the basic queries <a href="https://learngraphql.com/basics/querying-graphql">here</a> on LearnGraphQL</p>
+
+<h4 id="many-more-goodies:05301946b75cb988bc2be8549079b4fa">Many more goodies</h4>
+
+<p>GraphQL supports great features for making more elaborate and robust queries.</p>
+
+<h5 id="mutating-the-database:05301946b75cb988bc2be8549079b4fa">Mutating the database</h5>
+
+<p>We just don&rsquo;t need to get the data from the database, but also mutate it, change it and it&rsquo;s really simple and feels like you are passing some data to the function. A simple mutation query in order to add a chef will be like this:</p>
+
+<pre><code class="language-graphql">mutation {
+	createChef(name: &quot;Hanan Ali&quot;, everCooked: false){
+		id
+		name
+	}
+}
+</code></pre>
+
+<p>Unlike querying you need to specify <code>mutation</code> here. After the successful creation of the query, we request the name and id to get back to us. It can&rsquo;t get any simpler. Learn more about mutations <a href="https://learngraphql.com/basics/invoking-mutations/1">here</a></p>
+
+<h5 id="fragments:05301946b75cb988bc2be8549079b4fa">Fragments</h5>
+
+<p>Fragments are really awesome and I found them like modules. It helps in abolishing the repetitiveness in code while requesting contents. If I know that I only want the <code>id</code> and <code>name</code> of the recipe uploader. The authorInfo contents can be rewritten as a <strong>fragment</strong> as shown below</p>
+
+<pre><code class="language-graphql">recentPost {
+	title
+	description
+	author {
+		...authorInfo
+	}
+}
+
+fragment authorInfo as Author {
+	id
+	name
+}
+
+</code></pre>
+
+<p>After defining the fragment, it&rsquo;s as simple as calling the name of the fragment in this case it is <code>...authorInfo</code></p>
+
+<p>You can learn more about the fragments <a href="https://learngraphql.com/basics/fragments">here</a></p>
+
+<h4 id="graphql-js-implementaiton:05301946b75cb988bc2be8549079b4fa">GraphQL.js implementaiton</h4>
+
+<p><a href="https://facebook.com">Facebook</a> has created a reference implementation of GraphQL in JavaScript and it&rsquo;s located <a href="https://github.com/graphql/graphql-js">here</a>. Also, there exist many community maintained GraphQL implementations for other languages too. In order to create a GraphQL HTTP server really quick in Node.js. You can use <a href="https://github.com/graphql/express-graphql">express-graphql</a>. It&rsquo;s in my list to do awesome stuff using it this month. Make it in yours too.</p>
+
+<h4 id="learngraphql-https-learngraphql-com:05301946b75cb988bc2be8549079b4fa"><a href="https://learngraphql.com">LearnGraphQL</a></h4>
+
+<p>The awesome stuff in GraphQL is too hard to properly cover in one blog post. There are many great features such as Query Variable, Parallel queries etc.</p>
+
+<p>Therefore, <a href="https://kadira.io">Kadira</a> has made <a href="https://learngraphql.com">LearnGraphQL</a> for people who want to learn it using practical examples through LearnGraphQL <a href="https://sandbox.learngraphql.com">Sandbox</a>. I have learnt a lot from it, and I hope you too learn from it too.</p>
+
+<h4 id="fossasia:05301946b75cb988bc2be8549079b4fa">FOSSASIA</h4>
+
+<p>This blog post was done as task in <a href="https://codein.withgoogle.com/">Google CodeIn</a> with <a href="https://fossasia.org">FOSSASIA</a>. FOSSASIA is playing a major role in promoting open source development and collaboration in the region of Asia and also all over the world. FOSSASIA is really commited in doing what it does and is totally awesome organization which you can help in achieving their goal. It will be so really cool and awesome if you visit FOSSASIA <a href="https://fossasia.org">here</a>. Also, Visit their Github page <a href="https://fossasia.github.io">here</a></p>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+            
+            <p class="f-post-time"><time datetime="2016-01-09T23:00:48&#43;05:00">January 9, 2016</time></p>
+        </section>
+                        
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=GraphQL%20For%20Newbs&url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fgraphql-tutorial%2fcontent%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fgraphql-tutorial%2fcontent%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fabdulhannanali.github.io%2fmy-opensource-journey%2fgraphql-tutorial%2fcontent%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+
+            
+        </section>
+                
+        <section id="comments">
+            <div id="disqus_thread" class="post-comments"></div>
+            <script type="text/javascript">
+              var disqus_shortname = 'myopensourcejourney';
+              (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>
+              Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </section>
+        
+        
+    </footer>
+</article>
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="https://abdulhannanali.github.io/my-opensource-journey/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>Site is published under General Public License 3.0. Click <a href="https://github.com/abdulhannanali/my-opensource-journey/blob/master/LICENSE">here</a> to learn more</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://abdulhannanali.github.io/my-opensource-journey/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphql-tutorials on My open source journey</title>
+    <link>https://abdulhannanali.github.io/my-opensource-journey/graphql-tutorial/</link>
+    <description>Recent content in Graphql-tutorials on My open source journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Site Licensed under GNU GPL V3.0</copyright>
+    <lastBuildDate>Sat, 09 Jan 2016 23:00:48 +0500</lastBuildDate>
+    <atom:link href="https://abdulhannanali.github.io/my-opensource-journey/graphql-tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GraphQL For Newbs</title>
+      <link>https://abdulhannanali.github.io/my-opensource-journey/graphql-tutorial/content/</link>
+      <pubDate>Sat, 09 Jan 2016 23:00:48 +0500</pubDate>
+      
+      <guid>https://abdulhannanali.github.io/my-opensource-journey/graphql-tutorial/content/</guid>
+      <description>
+
+&lt;h3 id=&#34;what-in-the-world-graphql-is:05301946b75cb988bc2be8549079b4fa&#34;&gt;What in the world GraphQL is?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;../graphql.png&#34; alt=&#34;GraphQL Logo&#34; /&gt;
+There&amp;rsquo;s a lot of mystery behind GraphQL but it&amp;rsquo;s not difficult to understand, what it actually is, and what it does. Because of it&amp;rsquo;s really Sci Fi name I was sure I won&amp;rsquo;t understand it. But after learning more about it. I was like this dog. Chilling!
+&lt;img src=&#34;../chilldog.gif&#34; alt=&#34;GIF of a dog chilling&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;GraphQL is used to build data mongering client applications in a really intuitive way. It&amp;rsquo;s a Query Language used to request the data from the server. You send a GraphQL query to the server and it sends you the data back (exampele: JSON Payload) according to the query you sent. No need for a hundred different REST routes in order for getting complete data you want.&lt;/p&gt;
+
+&lt;p&gt;GraphQL is an application query language. It makes no assumption of the protocol you are using, the query is just a plain string which you give to the GraphQL implementation.&lt;/p&gt;
+
+&lt;p&gt;GraphQL is also hiearchial, which means you can accomplish much more in one query too than the rest lets you do in many queries.&lt;/p&gt;
+
+&lt;p&gt;Client decides how the data needs to be structured, instead of server which lets us make it &lt;strong&gt;backwards compatible&lt;/strong&gt; and at the same time upgrade for the newer version of clients.&lt;/p&gt;
+
+&lt;p&gt;Data requirements probably will change with time but it doesn&amp;rsquo;t always mean you will be allowed to change the client according to your data specs too. GraphQL allows you to make flexible queries and leaves defining the data structure to the client. This is a really helpful image I found from LearnGraphQL on how GraphQL application communicates for data
+&lt;img src=&#34;../graphqlflow.png&#34; alt=&#34;GraphQL from LearnGraphQL&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;GraphQL is strongly typed, providing you with awesome development stage compiling features which are really helpful for the debugging and let&amp;rsquo;s you debug the queries and code before it all ships.&lt;/p&gt;
+
+&lt;p&gt;You can access the GraphQL specification &lt;a href=&#34;http://facebook.github.io/graphql/&#34;&gt;here&lt;/a&gt; and maybe create an implementation of it for the language you love.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a great blog post on &lt;a href=&#34;https://facebook.github.io/react&#34;&gt;React Github Pages&lt;/a&gt; about GraphQL &lt;a href=&#34;https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html&#34;&gt;here&lt;/a&gt;. It explains many of the pros of the GraphQL and why there was a need of GraphQL in facebook internally.&lt;/p&gt;
+
+&lt;h3 id=&#34;querying-the-graphql:05301946b75cb988bc2be8549079b4fa&#34;&gt;Querying the GraphQL&lt;/h3&gt;
+
+&lt;p&gt;We have hundred recipes in our Grand Cooking database. We need to retrieve the latest one  with the following information hiearchy if possible:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;latestRecipe
+
+&lt;ul&gt;
+&lt;li&gt;id&lt;/li&gt;
+&lt;li&gt;title&lt;/li&gt;
+&lt;li&gt;description&lt;/li&gt;
+&lt;li&gt;ingredients&lt;/li&gt;
+&lt;li&gt;uploader
+
+&lt;ul&gt;
+&lt;li&gt;id&lt;/li&gt;
+&lt;li&gt;dateJoined&lt;/li&gt;
+&lt;li&gt;email&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The GraphQL query for it will look like this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-graphql&#34;&gt;{
+	latestRecipe {
+		_id,
+		title,
+		description,
+		ingredients,
+		uploader {
+			_id
+			dateJoined
+		}
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;IMHO, the query doesn&amp;rsquo;t look much different than what we specified in the bulleted list. Now, provided database has the data we requested and GraphQL is implemented on the back end we will get our following neat response in form of a JSON payload.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+	&amp;quot;data&amp;quot;: {
+		&amp;quot;latestRecipe&amp;quot;: {
+			&amp;quot;_id&amp;quot;: &amp;quot;31231&amp;quot;,
+
+			&amp;quot;title&amp;quot;: &amp;quot;Best Big, Fat, Chewy Chocolate Chip Cookie&amp;quot;,
+			&amp;quot;instructions&amp;quot;: &amp;quot;Preheat the oven to 325 degrees F (165 degrees C). Grease cookie sheets or line with parchment paper.Sift together the flour, baking soda and salt; set aside.In a medium bowl, cream together the melted butter, brown sugar and white sugar until well blended. Beat in the vanilla, egg, and egg yolk until light and creamy. Mix in the sifted ingredients until just blended. Stir in the chocolate chips by hand using a wooden spoon. Drop cookie dough 1/4 cup at a time onto the prepared cookie sheets. Cookies should be about 3 inches apart.Bake for 15 to 17 minutes in the preheated oven, or until the edges are lightly toasted. Cool on baking sheets for a few minutes before transferring to wire racks to cool completely.&amp;quot;,
+
+			&amp;quot;ingredients&amp;quot;: [
+				&amp;quot;2 cups all-purpose flour&amp;quot;,
+				&amp;quot;1/2 teaspoon baking soda&amp;quot;,
+				&amp;quot;1/2 teaspoon salt&amp;quot;,
+				&amp;quot;2 cups semisweet chocolate chips&amp;quot;
+			],
+
+			&amp;quot;uploader&amp;quot;: {
+				&amp;quot;name&amp;quot;: &amp;quot;ELIZABETHBH&amp;quot;,
+				&amp;quot;_id&amp;quot;: &amp;quot;183690&amp;quot;
+			}
+		}
+	}
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Don&amp;rsquo;t try to make cookies from this recipe though, for this complete recipe by ELIZABETH click &lt;a href=&#34;http://allrecipes.com/recipe/25037/best-big-fat-chewy-chocolate-chip-cookie/&#34;&gt;here (AllRecipes.com link)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Look at the JSON Payload, we have achieved so much in one query, so it&amp;rsquo;s automatically going to be really helpful in our &lt;strong&gt;product development&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Learn more about the basic queries &lt;a href=&#34;https://learngraphql.com/basics/querying-graphql&#34;&gt;here&lt;/a&gt; on LearnGraphQL&lt;/p&gt;
+
+&lt;h4 id=&#34;many-more-goodies:05301946b75cb988bc2be8549079b4fa&#34;&gt;Many more goodies&lt;/h4&gt;
+
+&lt;p&gt;GraphQL supports great features for making more elaborate and robust queries.&lt;/p&gt;
+
+&lt;h5 id=&#34;mutating-the-database:05301946b75cb988bc2be8549079b4fa&#34;&gt;Mutating the database&lt;/h5&gt;
+
+&lt;p&gt;We just don&amp;rsquo;t need to get the data from the database, but also mutate it, change it and it&amp;rsquo;s really simple and feels like you are passing some data to the function. A simple mutation query in order to add a chef will be like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-graphql&#34;&gt;mutation {
+	createChef(name: &amp;quot;Hanan Ali&amp;quot;, everCooked: false){
+		id
+		name
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Unlike querying you need to specify &lt;code&gt;mutation&lt;/code&gt; here. After the successful creation of the query, we request the name and id to get back to us. It can&amp;rsquo;t get any simpler. Learn more about mutations &lt;a href=&#34;https://learngraphql.com/basics/invoking-mutations/1&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;fragments:05301946b75cb988bc2be8549079b4fa&#34;&gt;Fragments&lt;/h5&gt;
+
+&lt;p&gt;Fragments are really awesome and I found them like modules. It helps in abolishing the repetitiveness in code while requesting contents. If I know that I only want the &lt;code&gt;id&lt;/code&gt; and &lt;code&gt;name&lt;/code&gt; of the recipe uploader. The authorInfo contents can be rewritten as a &lt;strong&gt;fragment&lt;/strong&gt; as shown below&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-graphql&#34;&gt;recentPost {
+	title
+	description
+	author {
+		...authorInfo
+	}
+}
+
+fragment authorInfo as Author {
+	id
+	name
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After defining the fragment, it&amp;rsquo;s as simple as calling the name of the fragment in this case it is &lt;code&gt;...authorInfo&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can learn more about the fragments &lt;a href=&#34;https://learngraphql.com/basics/fragments&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;graphql-js-implementaiton:05301946b75cb988bc2be8549079b4fa&#34;&gt;GraphQL.js implementaiton&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://facebook.com&#34;&gt;Facebook&lt;/a&gt; has created a reference implementation of GraphQL in JavaScript and it&amp;rsquo;s located &lt;a href=&#34;https://github.com/graphql/graphql-js&#34;&gt;here&lt;/a&gt;. Also, there exist many community maintained GraphQL implementations for other languages too. In order to create a GraphQL HTTP server really quick in Node.js. You can use &lt;a href=&#34;https://github.com/graphql/express-graphql&#34;&gt;express-graphql&lt;/a&gt;. It&amp;rsquo;s in my list to do awesome stuff using it this month. Make it in yours too.&lt;/p&gt;
+
+&lt;h4 id=&#34;learngraphql-https-learngraphql-com:05301946b75cb988bc2be8549079b4fa&#34;&gt;&lt;a href=&#34;https://learngraphql.com&#34;&gt;LearnGraphQL&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The awesome stuff in GraphQL is too hard to properly cover in one blog post. There are many great features such as Query Variable, Parallel queries etc.&lt;/p&gt;
+
+&lt;p&gt;Therefore, &lt;a href=&#34;https://kadira.io&#34;&gt;Kadira&lt;/a&gt; has made &lt;a href=&#34;https://learngraphql.com&#34;&gt;LearnGraphQL&lt;/a&gt; for people who want to learn it using practical examples through LearnGraphQL &lt;a href=&#34;https://sandbox.learngraphql.com&#34;&gt;Sandbox&lt;/a&gt;. I have learnt a lot from it, and I hope you too learn from it too.&lt;/p&gt;
+
+&lt;h4 id=&#34;fossasia:05301946b75cb988bc2be8549079b4fa&#34;&gt;FOSSASIA&lt;/h4&gt;
+
+&lt;p&gt;This blog post was done as task in &lt;a href=&#34;https://codein.withgoogle.com/&#34;&gt;Google CodeIn&lt;/a&gt; with &lt;a href=&#34;https://fossasia.org&#34;&gt;FOSSASIA&lt;/a&gt;. FOSSASIA is playing a major role in promoting open source development and collaboration in the region of Asia and also all over the world. FOSSASIA is really commited in doing what it does and is totally awesome organization which you can help in achieving their goal. It will be so really cool and awesome if you visit FOSSASIA &lt;a href=&#34;https://fossasia.org&#34;&gt;here&lt;/a&gt;. Also, Visit their Github page &lt;a href=&#34;https://fossasia.github.io&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
